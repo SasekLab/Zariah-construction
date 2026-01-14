@@ -133,16 +133,10 @@ export default function Header() {
                         <NavLink to="/">Home</NavLink>
                       </li>
                       <li>
-                        <NavLink to="/about">About Us</NavLink>
-                      </li>
-                      <li className="has-dropdown">
-                        <NavLink to="/news">Pages</NavLink>
+                        <NavLink to="/#about">About Us</NavLink>
                       </li>
                       <li>
-                        <NavLink to="/service-details">Services</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/news-details">Blog</NavLink>
+                        <NavLink to="/#services">Services</NavLink>
                       </li>
                       <li>
                         <NavLink to="/contact">Contact Us</NavLink>
@@ -152,18 +146,8 @@ export default function Header() {
                 </div>
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
-                <div className="header-right-icon">
-                  <a href="#" className="main-header__search search-toggler" onClick={(e) => { e.preventDefault(); toggleSearch(); }}>
-                    <i className="fa-regular fa-magnifying-glass"></i>
-                  </a>
-                </div>
-                <div className="header__hamburger my-auto">
-                  <div className="sidebar__toggle">
-                    <div className="header-bar">
-                      <img src={dotIcon} alt="menu" />
-                    </div>
-                  </div>
-                </div>
+                {/* Search button hidden */}
+                {/* Hamburger button hidden */}
                 <Link to="/contact" className="gt-theme-btn">
                   <span className="gt-text-btn">
                     <span className="gt-text-2">get a quote</span>

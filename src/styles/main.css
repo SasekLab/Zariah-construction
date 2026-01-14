@@ -1,43 +1,5 @@
 @charset "UTF-8";
-/*
-Theme Name: Conztra 
-Author: Gramentheme
-Author URI: https://themeforest.net/user/Gramentheme/portfolio
-Description: Conztra - Construction and Architecture HTML Template
-Service Html Template 
-Version: 1.0.0
-*/
-/*CSS Table Of Content Ends Here*/
-/*
---------------------------------------------------------------
-[Table of Contents]
---------------------------------------------------------------
-01. Variables & Mixins
-02. Typography
-03. Buttons
-04. About 
-05. Animation 
-06. Brand 
-07. Contact
-08. Cta
-09. Faq
-10. Feature
-11. Footer
-12. Header
-13. Helping
-14. Hero
-15. Meanmenu
-16. News
-17. Preloader
-18. Pricing
-19. Project
-20. Section
-21. Service
-22. Shop
-23. Team
-24. Testimonial
---------------------------------------------------------------
-*/
+
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
@@ -13824,4 +13786,4 @@ span {
   right: 0;
   height: 58%;
   background: linear-gradient(90deg, rgba(252, 90, 17, 0.8), rgba(29, 29, 29, 0.8));
-}/*# sourceMappingURL=main.css.map */
+}

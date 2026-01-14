@@ -27,7 +27,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="service-section-1 section-padding section-bg fix">
+    <section id="services" className="service-section-1 section-padding section-bg fix">
       <div className="container">
         <div className="gt-section-title text-center">
           <h6 className="wow fadeInUp">OUR SERVICES</h6>
