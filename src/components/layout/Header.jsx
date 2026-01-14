@@ -56,7 +56,14 @@ export default function Header() {
               <p className="text d-none d-xl-block">
                 Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
               </p>
-              <div className="mobile-menu fix mb-3"></div>
+              <div className="mobile-menu fix mb-3">
+                <ul>
+                  <li><NavLink to="/" onClick={toggleOffcanvas}>Home</NavLink></li>
+                  <li><NavLink to="/#about" onClick={toggleOffcanvas}>About Us</NavLink></li>
+                  <li><NavLink to="/#services" onClick={toggleOffcanvas}>Services</NavLink></li>
+                  <li><NavLink to="/contact" onClick={toggleOffcanvas}>Contact Us</NavLink></li>
+                </ul>
+              </div>
               <div className="offcanvas__contact">
                 <h4>Contact Info</h4>
                 <ul>
@@ -146,24 +153,26 @@ export default function Header() {
                 </div>
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
-                {/* Mobile Menu Trigger */}
+                {/* Search Popup Toggle */}
+                <div className="header-right-icon d-none d-lg-flex">
+                  <button
+                    className="search-toggle-btn"
+                    onClick={toggleSearch}
+                    aria-label="Toggle search"
+                  >
+                    <i className="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+
+                {/* Mobile Menu Trigger - Hamburger */}
                 <button
-                  className="gt-menu-toggle d-lg-none"
+                  className={`gt-menu-toggle d-lg-none ${isOffcanvasOpen ? 'active' : ''}`}
                   onClick={toggleOffcanvas}
                   aria-label="Toggle mobile menu"
                 >
                   <span></span>
                   <span></span>
                   <span></span>
-                </button>
-
-                {/* Search Popup Toggle */}
-                <button
-                  className="search-toggle-btn d-none d-lg-block"
-                  onClick={toggleSearch}
-                  aria-label="Toggle search"
-                >
-                  <i className="fa-solid fa-magnifying-glass"></i>
                 </button>
 
                 <Link to="/contact" className="gt-theme-btn d-none d-md-inline-flex">

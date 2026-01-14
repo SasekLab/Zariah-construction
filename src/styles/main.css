@@ -6290,40 +6290,30 @@ span {
   filter: initial;
 }
 
+/* ============================================
+   MOBILE HAMBURGER MENU - COMPLETE REWRITE
+   ============================================ */
+
 .offcanvas__info {
-  background: var(--gt-white) none repeat scroll 0 0;
-  border-left: 2px solid var(--gt-theme);
+  background: #fff;
   position: fixed;
   right: 0;
   top: 0;
-  width: 400px;
-  height: 100%;
+  width: 320px;
+  max-width: 85vw;
+  height: 100vh;
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: translateX(calc(100% + 80px));
-  -moz-transform: translateX(calc(100% + 80px));
-  -ms-transform: translateX(calc(100% + 80px));
-  -o-transform: translateX(calc(100% + 80px));
-  transform: translateX(calc(100% + 80px));
-  -webkit-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out, visibility 0.45s ease-in-out;
-  -moz-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out, visibility 0.45s ease-in-out;
-  transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out, visibility 0.45s ease-in-out;
-  z-index: 99999;
-  overflow-y: scroll;
-  overscroll-behavior-y: contain;
-  scrollbar-width: none;
-}
-.offcanvas__info::-webkit-scrollbar {
-  display: none;
+  transform: translateX(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 99998;
+  overflow-y: auto;
+  box-shadow: -5px 0 30px rgba(0, 0, 0, 0.3);
 }
 
 .offcanvas__info.info-open {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
   transform: translateX(0);
 }
 
@@ -6463,56 +6453,157 @@ span {
   }
 }
 
-/* Mobile Menu Toggle Button */
+/* ============================================
+   MOBILE HAMBURGER BUTTON - REWRITTEN
+   ============================================ */
+
 .gt-menu-toggle {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   position: relative;
   cursor: pointer;
-  background: transparent;
-  border: none;
+  background: rgba(0, 0, 0, 0.7) !important;
+  border: 2px solid #fff !important;
+  border-radius: 8px;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 6px;
-  z-index: 10000;
+  align-items: center;
+  gap: 5px;
+  z-index: 99999 !important;
+  transition: all 0.3s ease;
+}
+
+.gt-menu-toggle:hover {
+  background: var(--gt-theme) !important;
+  border-color: var(--gt-theme) !important;
+  transform: scale(1.05);
 }
 
 .gt-menu-toggle span {
   display: block;
-  width: 28px;
+  width: 24px;
   height: 3px;
-  background-color: var(--gt-header);
-  border-radius: 2px;
+  background-color: #fff !important;
+  border-radius: 3px;
   transition: all 0.3s ease;
-  margin: 0 auto;
+  margin: 0;
 }
 
-/* Make hamburger visible on all screens */
-.gt-menu-toggle span {
-  background-color: #333;
+.gt-menu-toggle:hover span {
+  background-color: #fff !important;
 }
 
-.header-1.sticky .gt-menu-toggle span {
-  background-color: var(--gt-header);
+/* When menu is open - transform to X */
+.gt-menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
-.gt-menu-toggle:hover span:nth-child(1) {
-  transform: translateY(2px);
+.gt-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
 }
 
-.gt-menu-toggle:hover span:nth-child(3) {
-  transform: translateY(-2px);
+.gt-menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Mobile: Ensure hamburger is visible */
-@media (max-width: 991px) {
-  .gt-menu-toggle span {
-    background-color: #fff;
+/* Offcanvas Overlay - Updated */
+.offcanvas__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99997;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.offcanvas__overlay.overlay-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Offcanvas Wrapper - Updated */
+.offcanvas__wrapper {
+  position: relative;
+  height: 100%;
+  padding: 25px 20px;
+}
+
+.offcanvas__wrapper .offcanvas__content .offcanvas__close {
+  width: 44px;
+  height: 44px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--gt-theme);
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.offcanvas__wrapper .offcanvas__content .offcanvas__close:hover {
+  transform: rotate(90deg);
+}
+
+.offcanvas__wrapper .offcanvas__content .offcanvas__close i {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Mobile Navigation in Offcanvas */
+.offcanvas__wrapper .offcanvas__content .mobile-menu {
+  margin-top: 70px;
+}
+
+.offcanvas__wrapper .offcanvas__content .mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.offcanvas__wrapper .offcanvas__content .mobile-menu ul li {
+  border-bottom: 1px solid #eee;
+}
+
+.offcanvas__wrapper .offcanvas__content .mobile-menu ul li a {
+  display: block;
+  padding: 16px 0;
+  color: var(--gt-header);
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.offcanvas__wrapper .offcanvas__content .mobile-menu ul li a:hover {
+  color: var(--gt-theme);
+  padding-left: 10px;
+}
+
+/* Hide text on mobile */
+@media (max-width: 767px) {
+  .offcanvas__wrapper .offcanvas__content .text {
+    display: none !important;
   }
-  .header-1.sticky .gt-menu-toggle span {
-    background-color: var(--gt-header);
+  .offcanvas__wrapper .offcanvas__content .offcanvas__contact {
+    display: none !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .offcanvas__info {
+    width: 280px;
+  }
+  .offcanvas__wrapper {
+    padding: 20px;
   }
 }
 
