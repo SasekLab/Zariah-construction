@@ -9,15 +9,15 @@ import Counter from '../components/sections/Counter'
 import Purposes from '../components/sections/Purposes'
 import Brand from '../components/sections/Brand'
 import Testimonials from '../components/sections/Testimonials'
-import Shop from '../components/sections/Shop'
 import Faq from '../components/sections/Faq'
-import News from '../components/sections/News'
 import Cta from '../components/sections/Cta'
 import { useEffect } from 'react'
 import { useMainScripts } from '../hooks/useMainScripts'
+import { useLocation } from 'react-router-dom'
 
 export default function Home() {
   useMainScripts()
+  const location = useLocation()
 
   useEffect(() => {
     // Initialize WOW animations - must happen after DOM is rendered
@@ -38,6 +38,19 @@ export default function Home() {
     }
   }, [])
 
+  // Handle hash scroll
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '')
+      const element = document.getElementById(id)
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }, 100)
+      }
+    }
+  }, [location.hash])
+
   return (
     <div className="page-wrapper">
       <Preloader />
@@ -51,9 +64,7 @@ export default function Home() {
         <Purposes />
         <Brand />
         <Testimonials />
-        <Shop />
         <Faq />
-        <News />
         <Cta />
       </main>
       <Footer />

@@ -1,4 +1,3 @@
-import faqImage from '../../assets/img/home-1/faq.jpg'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
@@ -42,7 +41,7 @@ export default function Faq() {
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 1.3, ease: [0.645, 0.045, 0.355, 1], delay: 0.4 }}
               >
-                <img src={faqImage} alt="FAQ" />
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='700' viewBox='0 0 600 700'%3E%3Crect width='600' height='700' fill='%234B5563'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='24' fill='white'%3EFAQ Image%3C/text%3E%3C/svg%3E" alt="FAQ" />
               </motion.div>
             </div>
             <div className="col-lg-6">
