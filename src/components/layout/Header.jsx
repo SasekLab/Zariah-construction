@@ -125,7 +125,7 @@ export default function Header() {
                   <img src={blackLogo} alt="logo" />
                 </Link>
               </div>
-              <div className="mean__menu-wrapper">
+              <div className="mean__menu-wrapper d-none d-lg-block">
                 <div className="main-menu">
                   <nav id="mobile-menu">
                     <ul>
@@ -146,9 +146,27 @@ export default function Header() {
                 </div>
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
-                {/* Search button hidden */}
-                {/* Hamburger button hidden */}
-                <Link to="/contact" className="gt-theme-btn">
+                {/* Mobile Menu Trigger */}
+                <button
+                  className="gt-menu-toggle d-lg-none"
+                  onClick={toggleOffcanvas}
+                  aria-label="Toggle mobile menu"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+
+                {/* Search Popup Toggle */}
+                <button
+                  className="search-toggle-btn d-none d-lg-block"
+                  onClick={toggleSearch}
+                  aria-label="Toggle search"
+                >
+                  <i className="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <Link to="/contact" className="gt-theme-btn d-none d-md-inline-flex">
                   <span className="gt-text-btn">
                     <span className="gt-text-2">get a quote</span>
                   </span>

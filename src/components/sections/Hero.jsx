@@ -61,7 +61,7 @@ export default function Hero() {
       </div>
       <div className="container-fluid">
         <div className="row g-4 align-items-center">
-          <div className="col-lg-7">
+          <div className="col-lg-7 col-md-12 order-2 order-lg-1">
             <Swiper
               ref={heroSliderRef}
               className="hero-slider-1"
@@ -113,7 +113,7 @@ export default function Hero() {
               ))}
             </Swiper>
           </div>
-          <div className="col-lg-5">
+          <div className="col-lg-5 col-md-12 order-1 order-lg-2">
             <Swiper
               ref={imageSliderRef}
               className="image-slider"
