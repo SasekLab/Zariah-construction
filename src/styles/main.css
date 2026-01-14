@@ -4709,6 +4709,712 @@ span {
   }
 }
 
+<<<<<<< Updated upstream
+=======
+/* Enhanced Mobile Responsiveness for Footer */
+@media (max-width: 767px) {
+  .footer-bottom .footer-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .footer-bottom .footer-wrapper .gt-social-icon {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .gt-footer-widget-wrapper .row {
+    gap: 30px;
+  }
+  .gt-footer-widget-wrapper .gt-footer-widget-items {
+    margin-bottom: 20px;
+  }
+  .gt-footer-widget-wrapper .gt-footer-widget-items .gt-widget-head h3 {
+    font-size: 18px;
+  }
+  .gt-footer-widget-wrapper .gt-footer-widget-items .gt-list-area li {
+    font-size: 14px;
+  }
+  .gt-footer-widget-wrapper .gt-footer-widget-items .gt-contact-content li {
+    font-size: 13px;
+  }
+  .gt-footer-widget-wrapper .gt-footer-widget-items .footer-socials {
+    gap: 8px;
+  }
+  .gt-footer-widget-wrapper .gt-footer-widget-items .footer-socials a {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer-bottom .footer-wrapper p {
+    font-size: 12px;
+  }
+  .gt-footer-widget-wrapper .gt-footer-widget-items .gt-list-area li,
+  .gt-footer-widget-wrapper .gt-footer-widget-items .gt-contact-content li {
+    font-size: 12px;
+  }
+}
+
+/* ============================================
+   MOBILE RESPONSIVENESS FOR REMAINING SECTIONS
+   ============================================ */
+
+/* About Section */
+@media (max-width: 767px) {
+  .gt-about-wrapper .gt-about-content h2 {
+    font-size: 28px;
+  }
+  .gt-about-wrapper .gt-about-content p.gt-about-text {
+    font-size: 14px;
+  }
+  .gt-about-wrapper .gt-about-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .gt-about-wrapper .gt-about-image-items .gt-about-image-2 {
+    position: relative;
+    max-width: 200px;
+    margin: 20px auto 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .gt-about-wrapper .gt-about-content h2 {
+    font-size: 24px;
+  }
+  .gt-about-wrapper .gt-skill-feature-items .gt-skill-feature .gt-box-title {
+    font-size: 16px;
+  }
+  .gt-about-wrapper .gt-about-button .gt-theme-btn .gt-text-btn {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Counter Section */
+@media (max-width: 767px) {
+  .gt-counter-box {
+    padding: 30px 20px;
+  }
+  .gt-counter-box h2 {
+    font-size: 36px;
+  }
+  .gt-counter-box p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .gt-counter-box {
+    padding: 25px 15px;
+  }
+  .gt-counter-box h2 {
+    font-size: 28px;
+  }
+  .gt-counter-box p {
+    font-size: 13px;
+  }
+}
+
+/* Testimonials Section */
+@media (max-width: 767px) {
+  .gt-testimonial-box-items {
+    padding: 30px 20px;
+  }
+  .gt-testi-thumb {
+    width: 70px;
+    height: 70px;
+  }
+  .gt-testi-content h5 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .gt-testi-content .client-info h4 {
+    font-size: 18px;
+  }
+  .gt-testi-content .client-info p {
+    font-size: 13px;
+  }
+  .gt-array-items {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .gt-testimonial-box-items {
+    padding: 25px 15px;
+  }
+  .gt-testi-thumb {
+    width: 60px;
+    height: 60px;
+  }
+  .gt-testi-content h5 {
+    font-size: 14px;
+  }
+  .gt-testi-content .client-info h4 {
+    font-size: 16px;
+  }
+  .gt-testi-content .client-info p {
+    font-size: 12px;
+  }
+}
+
+/* CTA Section */
+@media (max-width: 991px) {
+  .cta-wrapper {
+    padding: 50px 30px;
+  }
+  .cta-wrapper .cta-content h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cta-wrapper {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .cta-wrapper .cta-content h2 {
+    font-size: 24px;
+  }
+  .cta-wrapper .cta-content p {
+    font-size: 14px;
+  }
+  .cta-wrapper .cta-shape,
+  .cta-wrapper .cta-shape-2 {
+    display: none;
+  }
+  .cta-image {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .cta-image img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 575px) {
+  .cta-wrapper {
+    padding: 30px 15px;
+  }
+  .cta-wrapper .cta-content h6 {
+    font-size: 14px;
+  }
+  .cta-wrapper .cta-content h2 {
+    font-size: 20px;
+  }
+  .cta-wrapper .cta-content .gt-theme-btn .gt-text-btn {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+}
+
+/* FAQ Section */
+@media (max-width: 767px) {
+  .faq-wrapper-new {
+    padding: 0 15px;
+  }
+  .faq-content .gt-section-title h2 {
+    font-size: 24px;
+  }
+  .faq-content .accordion-button {
+    font-size: 16px;
+    padding: 15px;
+  }
+  .faq-content .accordion-body {
+    font-size: 14px;
+    padding: 15px;
+  }
+  .faq-image {
+    margin-bottom: 30px;
+  }
+  .faq-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .faq-content .gt-section-title h2 {
+    font-size: 20px;
+  }
+  .faq-content .accordion-button {
+    font-size: 14px;
+    padding: 12px;
+  }
+  .faq-content .accordion-body {
+    font-size: 13px;
+    padding: 12px;
+  }
+}
+
+/* Brand/Partners Section */
+@media (max-width: 767px) {
+  .gt-brand-slide-element .brand-image img {
+    max-width: 100px;
+    height: auto;
+  }
+  .gt-brand-section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .gt-brand-slide-element .brand-image img {
+    max-width: 80px;
+  }
+  .gt-brand-section {
+    padding: 50px 0;
+  }
+}
+
+/* Purposes Section */
+@media (max-width: 767px) {
+  .gt-purposes-content .gt-section-title h2 {
+    font-size: 24px;
+  }
+  .gt-purposes-content p {
+    font-size: 14px;
+  }
+  .gt-icon-items li {
+    gap: 15px;
+  }
+  .gt-purposes-icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .gt-icon-purposes-content h3 {
+    font-size: 16px;
+  }
+  .gt-icon-purposes-content p {
+    font-size: 13px;
+  }
+  .gt-purposes-image {
+    margin-bottom: 30px;
+  }
+  .gt-purposes-image img {
+    width: 100%;
+    height: auto;
+  }
+  .gt-circle-box {
+    width: 100px;
+    height: 100px;
+  }
+  .gt-circle-box .gt-arrow {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .gt-purposes-content .gt-section-title h2 {
+    font-size: 20px;
+  }
+  .gt-icon-items li {
+    flex-direction: column;
+    text-align: center;
+  }
+  .gt-purposes-icon {
+    margin-bottom: 10px;
+  }
+  .gt-circle-box {
+    width: 80px;
+    height: 80px;
+  }
+  .gt-circle-box .gt-arrow {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+  }
+}
+
+/* ============================================
+   GLOBAL MOBILE TOUCH TARGETS & BUTTON SIZES
+   ============================================ */
+
+@media (max-width: 767px) {
+  /* Ensure all buttons are touch-friendly (min 44x44px) */
+  .gt-theme-btn .gt-text-btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Links and clickable elements */
+  a, button, .link-btn {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Fix small inline links */
+  .link-btn, .link-btns {
+    min-height: auto;
+    padding: 10px 0;
+  }
+
+  /* Accordion buttons */
+  .accordion-button {
+    min-height: 48px;
+  }
+
+  /* Form inputs */
+  input, textarea, select {
+    min-height: 44px;
+    font-size: 16px; /* Prevents iOS zoom */
+  }
+
+  /* Social icons */
+  .footer-socials a,
+  .gt-social-icon a {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Service cards - make entire card clickable on mobile */
+  .service-card-items {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Extra small screen adjustments */
+  .gt-theme-btn .gt-text-btn {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+
+  /* Section titles */
+  .gt-section-title h2 {
+    font-size: 24px;
+  }
+  .gt-section-title h6 {
+    font-size: 12px;
+  }
+
+  /* Reduce padding on small screens */
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+/* ============================================
+   IMAGE OPTIMIZATION FOR MOBILE
+   ============================================ */
+
+@media (max-width: 767px) {
+  /* Constrain images to container width */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Hero images */
+  .hero-1 .hero-image img,
+  .gt-about-image img,
+  .gt-purposes-image img,
+  .cta-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Service and project images */
+  .service-card-items .service-image img,
+  .project-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* ============================================
+   HIDE DECORATIVE ELEMENTS ON MOBILE
+   ============================================ */
+
+@media (max-width: 991px) {
+  /* Hide complex decorative shapes that may break layout */
+  .hero-shape,
+  .group-shape,
+  .line-shape,
+  .top-shape,
+  .cta-shape,
+  .cta-shape-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Hide additional decorative elements on small screens */
+  .mouseCursor,
+  .gt-back-to-top {
+    display: none;
+  }
+
+  /* Reduce animation complexity on mobile */
+  .wow,
+  .splt-txt {
+    animation: none !important;
+  }
+}
+
+/* ============================================
+   FIX OVERFLOW AND SCROLL ISSUES
+   ============================================ */
+
+@media (max-width: 767px) {
+  /* Prevent horizontal scroll */
+  body,
+  .page-wrapper {
+    overflow-x: hidden;
+  }
+
+  /* Ensure containers don't overflow */
+  .container,
+  .container-fluid {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Fix Swiper overflow */
+  .swiper,
+  .swiper-wrapper {
+    overflow: visible;
+  }
+}
+
+/* ============================================
+   MOBILE RESPONSIVENESS FOR OTHER PAGES
+   ============================================ */
+
+/* Breadcrumb Section - Fixed to work with original styles */
+@media (max-width: 767px) {
+  .gt-breadcrumb-wrapper .gt-page-heading {
+    padding: 100px 0 80px;
+  }
+  .gt-breadcrumb-wrapper .gt-page-heading h1 {
+    font-size: 36px;
+  }
+  .gt-breadcrumb-wrapper .gt-page-heading .gt-breadcrumb-items li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .gt-breadcrumb-wrapper .gt-page-heading {
+    padding: 80px 0 60px;
+  }
+  .gt-breadcrumb-wrapper .gt-page-heading h1 {
+    font-size: 28px;
+  }
+  .gt-breadcrumb-wrapper .gt-page-heading .gt-breadcrumb-items li {
+    font-size: 13px;
+  }
+}
+
+/* Contact Page */
+@media (max-width: 767px) {
+  .contact-info-items {
+    padding: 25px 20px;
+  }
+  .contact-info-items .icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .contact-info-items h4 {
+    font-size: 18px;
+  }
+  .contact-info-items h6 {
+    font-size: 14px;
+  }
+  .gt-contact-us-wrapper h2 {
+    font-size: 28px;
+  }
+  .form-clt span {
+    font-size: 14px;
+  }
+  .form-clt input,
+  .form-clt textarea {
+    padding: 15px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-info-items {
+    padding: 20px 15px;
+  }
+  .contact-info-items .icon {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 18px;
+  }
+  .contact-info-items h4 {
+    font-size: 16px;
+  }
+  .contact-info-items h6 {
+    font-size: 13px;
+  }
+  .gt-contact-us-wrapper h2 {
+    font-size: 24px;
+  }
+  .contact-btn .gt-theme-btn .gt-text-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Map Section */
+@media (max-width: 767px) {
+  .gt-map-section {
+    height: 300px;
+  }
+  .googpemap iframe {
+    height: 300px;
+  }
+}
+
+/* Service Details Page */
+@media (max-width: 767px) {
+  .service-details-wrapper h2 {
+    font-size: 28px;
+  }
+  .service-details-wrapper p {
+    font-size: 15px;
+  }
+}
+
+/* Project Details Page */
+@media (max-width: 767px) {
+  .project-details-wrapper h2 {
+    font-size: 28px;
+  }
+  .project-details-wrapper .project-informaion-box {
+    padding: 25px 20px;
+    margin-top: 0;
+  }
+  .project-details-wrapper .project-informaion-box h4 {
+    font-size: 18px;
+  }
+  .project-details-wrapper .project-informaion-box .project-list li {
+    font-size: 16px;
+    padding: 15px 0;
+  }
+}
+
+/* Team Pages */
+@media (max-width: 767px) {
+  .gt-team-box-items .team-img {
+    height: 350px;
+  }
+  .gt-team-box-items .team-content h3 {
+    font-size: 20px;
+  }
+  .gt-team-box-items .team-content p {
+    font-size: 14px;
+  }
+}
+
+/* News/Blog Pages */
+@media (max-width: 767px) {
+  .gt-blog-box-items .blog-img {
+    height: 250px;
+  }
+  .gt-blog-box-items .blog-content h3 {
+    font-size: 20px;
+  }
+  .gt-blog-box-items .blog-content p {
+    font-size: 14px;
+  }
+}
+
+/* Pricing Page */
+@media (max-width: 767px) {
+  .gt-pricing-box-items {
+    padding: 30px 20px;
+  }
+  .gt-pricing-box-items .pricing-header h3 {
+    font-size: 24px;
+  }
+  .gt-pricing-box-items .price h2 {
+    font-size: 36px;
+  }
+  .gt-pricing-box-items .pricing-list li {
+    font-size: 14px;
+  }
+}
+
+/* Shop Pages */
+@media (max-width: 767px) {
+  .gt-product-box-items .product-img {
+    height: 280px;
+  }
+  .gt-product-box-items .product-content h3 {
+    font-size: 18px;
+  }
+  .gt-product-box-items .product-content .price {
+    font-size: 20px;
+  }
+}
+
+/* Cart & Checkout */
+@media (max-width: 767px) {
+  .cart-table {
+    font-size: 14px;
+  }
+  .cart-table th,
+  .cart-table td {
+    padding: 12px 8px;
+  }
+  .checkout-form {
+    padding: 25px 20px;
+  }
+}
+
+/* Page Wrapper for Coming Soon & 404 */
+@media (max-width: 767px) {
+  .gt-404-wrapper h1 {
+    font-size: 100px;
+  }
+  .gt-404-wrapper h2 {
+    font-size: 28px;
+  }
+  .coming-soon-wrapper h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 575px) {
+  .gt-404-wrapper h1 {
+    font-size: 70px;
+  }
+  .gt-404-wrapper h2 {
+    font-size: 24px;
+  }
+  .coming-soon-wrapper h1 {
+    font-size: 36px;
+  }
+  .coming-soon-wrapper p {
+    font-size: 14px;
+  }
+}
+
+>>>>>>> Stashed changes
 .gt-footer-section {
   position: relative;
   z-index: 9;
@@ -5834,6 +6540,14 @@ span {
 }
 .gt-breadcrumb-wrapper .gt-page-heading .gt-breadcrumb-items li i {
   color: var(--gt-white);
+}
+
+/* Breadcrumb Sub Title (used in Contact page) */
+.gt-breadcrumb-wrapper .gt-page-heading .gt-breadcrumb-sub-title {
+  margin-bottom: 10px;
+}
+.gt-breadcrumb-wrapper .gt-page-heading .gt-breadcrumb-sub-title h1 {
+  margin-bottom: 0;
 }
 
 .gt-error-items {
