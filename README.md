@@ -1,11 +1,11 @@
-# Azaria - Construction & Architecture React Template
+# Zariah Construction - Construction & Architecture React Template
 
-A modern React + Vite + Tailwind CSS website for Azaria Construction. Originally built as a static HTML/CSS/JS template, this version maintains all the original functionality and design while leveraging modern React technologies.
+A modern React + Vite + Tailwind CSS website for Zariah Construction Construction. Originally built as a static HTML/CSS/JS template, this version maintains all the original functionality and design while leveraging modern React technologies.
 
 ## Project Structure
 
 ```
-Azaria-Construction/
+Zariah Construction-Construction/
 ├── src/
 │   ├── assets/           # Images, fonts, and icons
 │   ├── components/
@@ -27,8 +27,8 @@ Azaria-Construction/
 ## Installation
 
 ```bash
-# Navigate to the Azaria-Construction directory
-cd Azaria-Construction
+# Navigate to the Zariah Construction-Construction directory
+cd Zariah Construction-Construction
 
 # Install dependencies
 npm install
