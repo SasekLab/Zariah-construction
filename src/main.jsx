@@ -26,14 +26,15 @@ import 'swiper/css/pagination'
 import 'animate.css'
 
 // Import WOW.js
-import WOW from 'wowjs'
+import * as WOWModule from 'wowjs'
+const WOW = WOWModule.default || WOWModule.WOW
 
 // Import Splitting.js and make it available globally
 import Splitting from 'splitting'
 window.Splitting = Splitting
 
 // Initialize WOW.js globally so it's available on all pages
-window.WOW = WOW.WOW
+window.WOW = WOW
 
 // Dynamically import jQuery plugins (they require jQuery to be global first)
 Promise.all([
