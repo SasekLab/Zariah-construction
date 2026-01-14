@@ -25,16 +25,17 @@ import 'swiper/css/pagination'
 // Import Animate.css
 import 'animate.css'
 
-// Import WOW.js
-import * as WOWModule from 'wowjs'
-const WOW = WOWModule.default || WOWModule.WOW
+// Import WOW.js - use dynamic import to handle CJS/ESM issues
+// WOW will be available on window.WOW after it loads
+import('wowjs/dist/wow.js').then(module => {
+  window.WOW = module.default || module.WOW || window.WOW
+}).catch(() => {
+  console.warn('WOW.js failed to load, animations may not work')
+})
 
 // Import Splitting.js and make it available globally
 import Splitting from 'splitting'
 window.Splitting = Splitting
-
-// Initialize WOW.js globally so it's available on all pages
-window.WOW = WOW
 
 // Dynamically import jQuery plugins (they require jQuery to be global first)
 Promise.all([
