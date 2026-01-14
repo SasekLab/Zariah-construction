@@ -6298,14 +6298,16 @@ span {
   top: 0;
   width: 400px;
   height: 100%;
+  opacity: 0;
+  visibility: hidden;
   -webkit-transform: translateX(calc(100% + 80px));
   -moz-transform: translateX(calc(100% + 80px));
   -ms-transform: translateX(calc(100% + 80px));
   -o-transform: translateX(calc(100% + 80px));
   transform: translateX(calc(100% + 80px));
-  -webkit-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
-  -moz-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
-  transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
+  -webkit-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out, visibility 0.45s ease-in-out;
+  -moz-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out, visibility 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out, visibility 0.45s ease-in-out;
   z-index: 99999;
   overflow-y: scroll;
   overscroll-behavior-y: contain;
@@ -6317,6 +6319,7 @@ span {
 
 .offcanvas__info.info-open {
   opacity: 1;
+  visibility: visible;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -6437,6 +6440,29 @@ span {
   }
 }
 
+/* Ensure offcanvas works on mobile */
+@media (max-width: 767px) {
+  .offcanvas__info {
+    width: 320px;
+  }
+  .offcanvas__wrapper .offcanvas__content .offcanvas__contact {
+    display: none !important;
+  }
+  .offcanvas__wrapper .offcanvas__content .text {
+    display: none;
+  }
+  .offcanvas__wrapper .offcanvas__content .mobile-menu {
+    display: block !important;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 450px) {
+  .offcanvas__info {
+    width: 280px;
+  }
+}
+
 /* Mobile Menu Toggle Button */
 .gt-menu-toggle {
   width: 40px;
@@ -6463,6 +6489,11 @@ span {
   margin: 0 auto;
 }
 
+/* Make hamburger visible on all screens */
+.gt-menu-toggle span {
+  background-color: #333;
+}
+
 .header-1.sticky .gt-menu-toggle span {
   background-color: var(--gt-header);
 }
@@ -6473,6 +6504,16 @@ span {
 
 .gt-menu-toggle:hover span:nth-child(3) {
   transform: translateY(-2px);
+}
+
+/* Mobile: Ensure hamburger is visible */
+@media (max-width: 991px) {
+  .gt-menu-toggle span {
+    background-color: #fff;
+  }
+  .header-1.sticky .gt-menu-toggle span {
+    background-color: var(--gt-header);
+  }
 }
 
 /* Search Toggle Button */
