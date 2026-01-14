@@ -125,3 +125,22 @@
    - Changed img src from: `{faqImage}`
    - Changed to: Inline SVG data URI (600x700, grey background #4B5563)
    - Uses "FAQ Image" text centered on grey background
+
+---
+
+## 2026-01-14 - Build Fixes
+
+### File Modified: `src/main.jsx`
+
+#### Changes Made:
+
+1. **Fixed WOW.js import for production build**
+   - Changed from: `import WOW from 'wowjs'`
+   - Changed to: `import * as WOWModule from 'wowjs'` with fallback
+   - Handles both CommonJS and ES module exports
+   - Build now completes successfully
+
+#### Build Status:
+- Build: ✅ Successful
+- Output: `dist/` folder generated
+- Bundle size: ~622 kB (gzipped: ~213 kB)
