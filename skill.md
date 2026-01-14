@@ -1,4 +1,4 @@
-# Known Issues & Solutions - Azaria Construction Project
+# Known Issues & Solutions - Zariah Construction Project
 
 ## WOW.js Animation Classes Causing Invisible Images
 
