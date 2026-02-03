@@ -5197,31 +5197,28 @@ span {
    MOBILE RESPONSIVENESS FOR OTHER PAGES
    ============================================ */
 
-/* Breadcrumb Section */
+/* Breadcrumb Section - Fixed to work with original styles */
 @media (max-width: 767px) {
-  .gt-breadcrumb-wrapper {
-    padding: 80px 0 60px;
+  .gt-breadcrumb-wrapper .gt-page-heading {
+    padding: 100px 0 80px;
   }
-  .gt-page-heading h1 {
-    font-size: 32px;
+  .gt-breadcrumb-wrapper .gt-page-heading h1 {
+    font-size: 36px;
   }
-  .gt-breadcrumb-items li {
+  .gt-breadcrumb-wrapper .gt-page-heading .gt-breadcrumb-items li {
     font-size: 14px;
   }
 }
 
 @media (max-width: 575px) {
-  .gt-breadcrumb-wrapper {
-    padding: 70px 0 50px;
+  .gt-breadcrumb-wrapper .gt-page-heading {
+    padding: 80px 0 60px;
   }
-  .gt-page-heading h1 {
-    font-size: 24px;
+  .gt-breadcrumb-wrapper .gt-page-heading h1 {
+    font-size: 28px;
   }
-  .gt-breadcrumb-items {
-    font-size: 12px;
-  }
-  .gt-breadcrumb-wrapper .gt-right-shape {
-    display: none;
+  .gt-breadcrumb-wrapper .gt-page-heading .gt-breadcrumb-items li {
+    font-size: 13px;
   }
 }
 
@@ -6744,6 +6741,14 @@ span {
 }
 .gt-breadcrumb-wrapper .gt-page-heading .gt-breadcrumb-items li i {
   color: var(--gt-white);
+}
+
+/* Breadcrumb Sub Title (used in Contact page) */
+.gt-breadcrumb-wrapper .gt-page-heading .gt-breadcrumb-sub-title {
+  margin-bottom: 10px;
+}
+.gt-breadcrumb-wrapper .gt-page-heading .gt-breadcrumb-sub-title h1 {
+  margin-bottom: 0;
 }
 
 .gt-error-items {
