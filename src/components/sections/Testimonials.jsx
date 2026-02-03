@@ -12,56 +12,49 @@ const testimonials = [
     image: client01,
     text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
     author: 'Marvin McKinney',
-    role: 'Construction Engineer',
-    thumb: sm01
+    role: 'Construction Engineer'
   },
   {
     id: 2,
     image: client02,
     text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
     author: 'Marvin McKinney',
-    role: 'Construction Engineer',
-    thumb: sm02
+    role: 'Construction Engineer'
   },
   {
     id: 3,
     image: client03,
     text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
     author: 'Marvin McKinney',
-    role: 'Construction Engineer',
-    thumb: sm03
+    role: 'Construction Engineer'
   },
   {
     id: 4,
     image: client01,
     text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
     author: 'Marvin McKinney',
-    role: 'Construction Engineerr',
-    thumb: sm04
+    role: 'Construction Engineerr'
   },
   {
     id: 5,
     image: client02,
     text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
     author: 'Marvin McKinney',
-    role: 'Construction Engineer',
-    thumb: sm05
+    role: 'Construction Engineer'
   },
   {
     id: 6,
     image: client03,
     text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
     author: 'Marvin McKinney',
-    role: 'Construction Engineer',
-    thumb: sm06
+    role: 'Construction Engineer'
   },
   {
     id: 7,
     image: client02,
     text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
     author: 'Marvin McKinney',
-    role: 'Construction Engineer',
-    thumb: sm07
+    role: 'Construction Engineer'
   },
 ]
 
