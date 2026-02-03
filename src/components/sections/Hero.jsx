@@ -24,7 +24,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="hero-section hero-1 fix bg-cover" style={{backgroundImage: `url('${heroBg}')`}}>
+    <section className="hero-section hero-1 fix bg-cover" style={{ backgroundImage: `url('${heroBg}')` }}>
       <motion.div
         className="hero-shape"
         animate={{ y: [0, -20, 0] }}
@@ -87,23 +87,23 @@ export default function Hero() {
                 <SwiperSlide key={item}>
                   <div className="hero-content">
                     <h1 className="wow fadeInUp" data-wow-delay=".3s">
-                      Modern <span>Construction</span> & Architecture
+                      BUILDING FOUNDATIONS, <span>CRAFTING FUTURES</span>
                     </h1>
                     <p className="wow fadeInUp" data-wow-delay=".5s">
-                      Conztra combines solid design with advanced features to build stunning construction websites. Perfect for contractors, architecture studios, and renovation companies. Create a strong online presence and grow your business with confidence.
+                      At Azaria Construction Company, we are dedicated to delivering exceptional construction solutions. We combine innovative design with advanced techniques to build structures that stand the test of time, ensuring quality and reliability in every project.
                     </p>
                     <div className="hero-button wow fadeInUp" data-wow-delay=".7s">
                       <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                        <Link to="/project-details" className="gt-theme-btn">
+                        <Link to="/service" className="gt-theme-btn">
                           <span className="gt-text-btn">
-                            <span className="gt-text-2">Your projects <i className="fa-solid fa-arrow-right"></i></span>
+                            <span className="gt-text-2">OUR SERVICES <i className="fa-solid fa-arrow-right"></i></span>
                           </span>
                         </Link>
                       </motion.div>
                       <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                        <Link to="/service-details" className="gt-theme-btn new">
+                        <Link to="/contact" className="gt-theme-btn new">
                           <span className="gt-text-btn">
-                            <span className="gt-text-2">our service <i className="fa-solid fa-arrow-right"></i></span>
+                            <span className="gt-text-2">REACH OUT TO US <i className="fa-solid fa-arrow-right"></i></span>
                           </span>
                         </Link>
                       </motion.div>
