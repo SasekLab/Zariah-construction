@@ -11,6 +11,9 @@ export default function Contact() {
   useMainScripts()
 
   useEffect(() => {
+    // Scroll to top when page loads
+    window.scrollTo(0, 0)
+
     // Re-initialize WOW.js when component mounts
     if (window.WOW && typeof window.WOW === 'function') {
       const wow = new window.WOW()
