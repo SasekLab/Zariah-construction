@@ -74,7 +74,7 @@ export default function About() {
                   {/* <img src={aboutImg1} alt="about" className="gt-about-img-1" /> */}
                   <div style={{ padding: '112.5% 0 0 0', position: 'relative' }}>
                     <iframe
-                      src="https://player.vimeo.com/video/1161507927?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;muted=1"
+                      src="https://player.vimeo.com/video/1161589511?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;muted=1"
                       frameBorder="0"
                       allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                       referrerPolicy="strict-origin-when-cross-origin"

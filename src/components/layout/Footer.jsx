@@ -45,11 +45,11 @@ export default function Footer() {
                   <h3>Useful Links</h3>
                 </div>
                 <ul className="gt-list-area">
+                  <li><NavLink to="/">Home</NavLink></li>
                   <li><NavLink to="/about">About Us</NavLink></li>
-                  <li><NavLink to="/team-details">Team Members</NavLink></li>
+                  <li><NavLink to="/service">Services</NavLink></li>
+                  <li><NavLink to="/project">Projects</NavLink></li>
                   <li><NavLink to="/contact">Contact Us</NavLink></li>
-                  <li><NavLink to="/contact">24/7 Online Support</NavLink></li>
-                  <li><NavLink to="/contact">Partners</NavLink></li>
                 </ul>
               </div>
             </div>
@@ -59,11 +59,11 @@ export default function Footer() {
                   <h3>Our Services</h3>
                 </div>
                 <ul className="gt-list-area">
-                  <li><NavLink to="/service-details">Building Construction</NavLink></li>
-                  <li><NavLink to="/service-details">Architecture Design</NavLink></li>
-                  <li><NavLink to="/service-details">Project Management</NavLink></li>
-                  <li><NavLink to="/service-details">Building Maintenance</NavLink></li>
-                  <li><NavLink to="/service-details">Flooring & Roofing</NavLink></li>
+                  <li><NavLink to="/service">Steel & Wooden Trusses</NavLink></li>
+                  <li><NavLink to="/service">Building Construction</NavLink></li>
+                  <li><NavLink to="/service">Burglar-Proof Windows/Gates</NavLink></li>
+                  <li><NavLink to="/service">Roofing & Glass Works</NavLink></li>
+                  <li><NavLink to="/service">Gas Stove Production</NavLink></li>
                 </ul>
               </div>
             </div>
@@ -87,10 +87,9 @@ export default function Footer() {
                   </li>
                 </ul>
                 <div className="footer-socials">
-                  <a href="https://facebook.com/"><i className="fa-brands fa-facebook-f"></i></a>
-                  <a href="https://instagram.com/"><i className="fa-brands fa-instagram"></i></a>
-                  <a href="https://twitter.com/"><i className="fa-brands fa-twitter"></i></a>
-                  <a href="https://dribbble.com/"><i className="fa-brands fa-dribbble"></i></a>
+                  <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i className="fa-brands fa-tiktok"></i></a>
+                  <a href="#"><i className="fa-brands fa-whatsapp"></i></a>
                 </div>
               </div>
             </div>
@@ -100,10 +99,9 @@ export default function Footer() {
           <div className="footer-wrapper">
             <p>© 2025 <b>Conztra</b>. All Rights Reserved.</p>
             <div className="gt-social-icon d-flex align-items-center">
-              <a href="#"><i className="fab fa-facebook-f"></i></a>
-              <a href="#"><i className="fab fa-twitter"></i></a>
-              <a href="#"><i className="fab fa-vimeo-v"></i></a>
-              <a href="#"><i className="fab fa-pinterest-p"></i></a>
+              <a href="#"><i className="fa-brands fa-instagram"></i></a>
+              <a href="#"><i className="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i className="fa-brands fa-whatsapp"></i></a>
             </div>
           </div>
         </div>
