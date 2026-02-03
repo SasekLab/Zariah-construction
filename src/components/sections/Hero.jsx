@@ -18,7 +18,7 @@ export default function Hero() {
 
   useEffect(() => {
     // Initialize WOW animation on mount
-    if (window.WOW) {
+    if (window.WOW && typeof window.WOW === 'function') {
       new window.WOW().init()
     }
   }, [])

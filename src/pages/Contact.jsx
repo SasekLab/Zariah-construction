@@ -12,7 +12,7 @@ export default function Contact() {
 
   useEffect(() => {
     // Re-initialize WOW.js when component mounts
-    if (window.WOW) {
+    if (window.WOW && typeof window.WOW === 'function') {
       const wow = new window.WOW()
       wow.init()
     }
@@ -20,7 +20,6 @@ export default function Contact() {
 
   return (
     <div className="page-wrapper">
-      {/* <Preloader /> */}
       <Header />
       <main>
         {/* Breadcrumb Section */}
@@ -151,6 +150,6 @@ export default function Contact() {
         </div>
       </main>
       <Footer />
-    </div>
+    </div >
   )
 }
