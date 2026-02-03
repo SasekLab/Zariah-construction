@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import blackLogo from '../../assets/img/logo/black-logo.svg'
+import zariahLogo from '../../assets/img/logo-zariah.png'
 import dotIcon from '../../assets/img/home-1/dot.svg'
 
 export default function Header() {
@@ -44,7 +44,7 @@ export default function Header() {
               <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                 <div className="offcanvas__logo">
                   <Link to="/">
-                    <img src={blackLogo} alt="logo" />
+                    <img src={zariahLogo} alt="logo" style={{ maxWidth: '150px' }} />
                   </Link>
                 </div>
                 <div className="offcanvas__close">
@@ -126,10 +126,10 @@ export default function Header() {
             <div className="header-main">
               <div className="logo">
                 <Link to="/" className="header-logo">
-                  <img src={blackLogo} alt="logo" />
+                  <img src={zariahLogo} alt="logo" style={{ maxWidth: '150px' }} />
                 </Link>
                 <Link to="/" className="header-logo-2">
-                  <img src={blackLogo} alt="logo" />
+                  <img src={zariahLogo} alt="logo" style={{ maxWidth: '150px' }} />
                 </Link>
               </div>
               <div className="mean__menu-wrapper d-none d-lg-block">

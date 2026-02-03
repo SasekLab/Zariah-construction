@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import whiteLogo from '../../assets/img/logo/white-logo.svg'
+import zariahLogo from '../../assets/img/logo-zariah.png'
 import callIcon from '../../assets/img/call.png'
 import locationIcon from '../../assets/img/location.png'
 
@@ -13,7 +13,7 @@ export default function Footer() {
               <div className="gt-footer-widget-items">
                 <div className="gt-widget-head">
                   <NavLink to="/" className="gt-footer-logo">
-                    <img src={whiteLogo} alt="logo" />
+                    <img src={zariahLogo} alt="logo" style={{ maxWidth: '150px' }} />
                   </NavLink>
                 </div>
                 <div className="gt-footer-content">
