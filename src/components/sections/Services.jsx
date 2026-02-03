@@ -91,7 +91,7 @@ export default function Services() {
                     transition={{ duration: 0.3 }}
                   />
                 </div>
-                <div className="service-content">
+                <div className="service-content" style={{ marginTop: '20px' }}>
                   {/* <motion.div
                     className="icon"
                     whileHover={{ rotate: 360, scale: 1.2 }}

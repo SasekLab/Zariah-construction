@@ -94,7 +94,7 @@ export default function Hero() {
                     </p>
                     <div className="hero-button wow fadeInUp" data-wow-delay=".7s">
                       <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                        <Link to="/service" className="gt-theme-btn">
+                        <Link to="/#services" className="gt-theme-btn">
                           <span className="gt-text-btn">
                             <span className="gt-text-2">OUR SERVICES <i className="fa-solid fa-arrow-right"></i></span>
                           </span>
