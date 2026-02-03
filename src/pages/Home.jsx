@@ -62,7 +62,7 @@ export default function Home() {
         <Projects />
         <Counter />
         <Purposes />
-        <Brand />
+        {/* <Brand /> */}
         <Testimonials />
         <Faq />
         <Cta />

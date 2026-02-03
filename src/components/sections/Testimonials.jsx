@@ -4,13 +4,7 @@ import { motion } from 'framer-motion'
 import client01 from '../../assets/img/home-1/testimonial/client-01.jpg'
 import client02 from '../../assets/img/home-1/testimonial/client-02.jpg'
 import client03 from '../../assets/img/home-1/testimonial/client-03.jpg'
-import sm01 from '../../assets/img/home-1/testimonial/sm-01.png'
-import sm02 from '../../assets/img/home-1/testimonial/sm-02.png'
-import sm03 from '../../assets/img/home-1/testimonial/sm-03.png'
-import sm04 from '../../assets/img/home-1/testimonial/sm-04.png'
-import sm05 from '../../assets/img/home-1/testimonial/sm-05.png'
-import sm06 from '../../assets/img/home-1/testimonial/sm-06.png'
-import sm07 from '../../assets/img/home-1/testimonial/sm-07.png'
+
 
 const testimonials = [
   {
@@ -73,12 +67,12 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="gt-testimonial-section fix section-padding pt-0">
+    <section className="gt-testimonial-section fix section-padding pt-10">
       <div className="container">
         <div className="gt-section-title text-center">
           <h6 className="wow fadeInUp">TESTIMONIAL</h6>
           <h2 className="wow splt-txt" data-splitting>
-            HAPPY CUSTOMERS SAID
+            OUR WORKS SPEAK FOR US
           </h2>
         </div>
       </div>
@@ -135,48 +129,21 @@ export default function Testimonials() {
           ))}
         </Swiper>
         <div className="gt-array-items">
-          <motion.button
+          {/*           <motion.button
             className="array-prev"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             <i className="fa-solid fa-arrow-left"></i>
           </motion.button>
-          <Swiper
-            className="gt-testimonial-slider-thumb"
-            modules={[Navigation, Autoplay]}
-            spaceBetween={30}
-            speed={1300}
-            loop={true}
-            centeredSlides={true}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-            }}
-            slidesPerView={7}
-            breakpoints={{
-              575: { slidesPerView: 7 },
-              0: { slidesPerView: 1 },
-            }}
-          >
-            {testimonials.map((testimonial) => (
-              <SwiperSlide key={testimonial.id}>
-                <motion.img
-                  src={testimonial.thumb}
-                  alt={testimonial.author}
-                  whileHover={{ scale: 1.3, rotate: 5 }}
-                  transition={{ duration: 0.3 }}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+
           <motion.button
             className="array-next"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             <i className="fa-solid fa-arrow-right"></i>
-          </motion.button>
+          </motion.button> */}
         </div>
       </div>
     </section>
