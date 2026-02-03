@@ -27,43 +27,37 @@ const services = [
     icon: 'fa-regular fa-shield-halved',
     title: 'Burglar-Proof Windows & Gates',
     description: 'Enhance the security of your property with our custom-designed burglar-proof windows and gates, combining strength with elegant design.',
-    image: service1
+    image: "https://fe5lpvispw.ufs.sh/f/DFYBeUqk6Uo08EtQ01XfEC9BtvOa0dgicA2WVkFHGKTrnbUq"
   },
   {
     icon: 'fa-regular fa-dungeon',
     title: 'Custom Gates',
     description: 'We offer a variety of gate solutions, including modern cooling gates, efficient sliding gates, and classic wooden gates, tailored to your aesthetic and functional requirements.',
-    image: service2
+    image: "https://fe5lpvispw.ufs.sh/f/DFYBeUqk6Uo021rx59HTeCp7RZOwlcsiPuvGyjJkSbLMh5rt"
   },
   {
     icon: 'fa-regular fa-building',
     title: 'Building Construction',
     description: 'From foundational work to complete structural builds, we manage all aspects of general building construction, ensuring quality and adherence to specifications.',
-    image: service3
-  },
-  {
-    icon: 'fa-regular fa-road',
-    title: 'Infrastructure Development',
-    description: 'Our capabilities extend to various infrastructure projects, contributing to the development of robust and sustainable community assets.',
-    image: service1
+    image: "https://fe5lpvispw.ufs.sh/f/DFYBeUqk6Uo0dsuFdhefb3XGakRHz4ZComrpsMl0yJEjg8eU"
   },
   {
     icon: 'fa-regular fa-layer-group',
     title: 'Roofing',
     description: 'We provide expert roofing services, including installation, repair, and maintenance, utilizing high-quality materials for lasting protection.',
-    image: service2
+    image: "https://fe5lpvispw.ufs.sh/f/DFYBeUqk6Uo06hfA0WtbvjAgp2VoacHBWO6CThiyL08fueD9"
   },
   {
     icon: 'fa-regular fa-window-maximize',
     title: 'Glass Works',
     description: 'Specializing in various glass installations, we offer solutions for windows, facades, and interior elements, focusing on precision and aesthetic appeal.',
-    image: service3
+    image: "https://fe5lpvispw.ufs.sh/f/DFYBeUqk6Uo0bhSFqvnzBctSg8v5o3XwYrPQiAF6f9Zu4lVD"
   },
   {
     icon: 'fa-regular fa-fire-burner',
     title: 'Gas Stove Production',
     description: 'We are also involved in the production of high-quality gas stoves for a range of applications, including homes, restaurants, and hotels, focusing on efficiency and safety.',
-    image: service1
+    image: "https://fe5lpvispw.ufs.sh/f/DFYBeUqk6Uo0PWNhBJ6bDI8MaqW9BYGAUpw0yrouRi1OKQV4"
   }
 ]
 
@@ -98,13 +92,13 @@ export default function Services() {
                   />
                 </div>
                 <div className="service-content">
-                  <motion.div
+                  {/* <motion.div
                     className="icon"
                     whileHover={{ rotate: 360, scale: 1.2 }}
                     transition={{ duration: 0.6 }}
                   >
                     <i className={service.icon}></i>
-                  </motion.div>
+                  </motion.div> */}
                   <h4>
                     <Link to="/service">{service.title}</Link>
                   </h4>
