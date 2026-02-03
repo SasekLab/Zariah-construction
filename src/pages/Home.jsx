@@ -21,7 +21,7 @@ export default function Home() {
 
   useEffect(() => {
     // Initialize WOW animations - must happen after DOM is rendered
-    if (window.WOW) {
+    if (window.WOW && typeof window.WOW === 'function') {
       window.wow = new window.WOW({
         boxClass: 'wow',
         animateClass: 'animated',
@@ -53,7 +53,6 @@ export default function Home() {
 
   return (
     <div className="page-wrapper">
-      <Preloader />
       <Header />
       <main>
         <Hero />
@@ -68,6 +67,6 @@ export default function Home() {
         <Cta />
       </main>
       <Footer />
-    </div>
+    </div >
   )
 }
