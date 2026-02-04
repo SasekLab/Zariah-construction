@@ -4,7 +4,7 @@ import Preloader from '../components/layout/Preloader'
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import { useMainScripts } from '../hooks/useMainScripts'
-import breadcrumbBg from '../assets/img/breadcrumb-bg.jpg'
+import breadcrumbBg from '../assets/img/breadcrumb-bg.png'
 import breadcrumbShape from '../assets/img/breadcrumb-shape.jpg'
 
 export default function Contact() {
@@ -60,8 +60,7 @@ export default function Contact() {
                   <div className="content">
                     <h4>Email Address</h4>
                     <h6>
-                      <a href="mailto:contact@ticstube.com">contact@ticstube.com</a> <br />
-                      <a href="mailto:contact@ticstube.com">info@ticstube.com</a>
+                      <a href="mailto:contact@zariahconstruction.com">contact@zariahconstruction.com</a> <br />
                     </h6>
                   </div>
                 </div>

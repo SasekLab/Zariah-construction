@@ -8,17 +8,17 @@ const purposes = [
   {
     icon: 'fa-solid fa-briefcase',
     title: 'EXPERT & PROFESSIONAL',
-    description: 'Lorem is Ipsum is simply is design iomyi is text Lorem.'
+    description: 'With years of expertise, a skilled team, and a passion for precision'
   },
   {
     icon: 'fa-solid fa-building-columns',
     title: 'HIGHT QUALITY WORK',
-    description: 'Lorem is Ipsum is simply is design iomyi is text Lorem.'
+    description: 'We deliver exceptional results that stand the test of time.'
   },
   {
     icon: 'fa-solid fa-gem',
     title: 'PROFESSIONAL APPROACH',
-    description: 'Lorem is Ipsum is simply is design iomyi is text Lorem.'
+    description: 'We approach every project with integrity, transparency, and a commitment to excellence.'
   }
 ]
 
@@ -59,7 +59,7 @@ export default function Purposes() {
                   </h2>
                 </div>
                 <p className="text">
-                  At Bconta, we believe construction is more than just building it's about creating spaces that inspire and endure. With years of expertise, a skilled team, and a passion for precision
+                  At Zariah Construction, we believe construction is more than just building it's about creating spaces that inspire and endure. With years of expertise, a skilled team, and a passion for precision
                 </p>
                 <ul className="gt-icon-items">
                   {purposes.map((purpose, index) => (
