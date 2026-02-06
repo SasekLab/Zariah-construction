@@ -58,10 +58,10 @@ export default function Home() {
         <Hero />
         <About />
         <Services />
-        <Projects />
+        {/* <Projects /> */}
         <Counter />
         <Purposes />
-        {/* <Brand /> */}
+        <Brand />
         <Testimonials />
         <Faq />
         <Cta />

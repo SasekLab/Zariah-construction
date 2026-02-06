@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import purposesImage from '../../assets/img/home-1/purposes/purposes-image.jpg'
+import purposesImage from '../../assets/img/main_asset/zar/house1.jpg'
 import textCircle from '../../assets/img/home-1/text-circle.png'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
@@ -8,17 +8,17 @@ const purposes = [
   {
     icon: 'fa-solid fa-briefcase',
     title: 'EXPERT & PROFESSIONAL',
-    description: 'Lorem is Ipsum is simply is design iomyi is text Lorem.'
+    description: 'With years of expertise, a skilled team, and a passion for precision'
   },
   {
     icon: 'fa-solid fa-building-columns',
     title: 'HIGHT QUALITY WORK',
-    description: 'Lorem is Ipsum is simply is design iomyi is text Lorem.'
+    description: 'We deliver exceptional results that stand the test of time.'
   },
   {
     icon: 'fa-solid fa-gem',
     title: 'PROFESSIONAL APPROACH',
-    description: 'Lorem is Ipsum is simply is design iomyi is text Lorem.'
+    description: 'We approach every project with integrity, transparency, and a commitment to excellence.'
   }
 ]
 
@@ -40,7 +40,7 @@ export default function Purposes() {
                 transition={{ duration: 1.3, ease: [0.645, 0.045, 0.355, 1], delay: 0.4 }}
               >
                 <img src={purposesImage} alt="purposes" />
-                <div className="gt-circle-box">
+                <div className="gt-circle-box" style={{ display: 'none' }}>
                   <Link to="/contact" className="gt-arrow">
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
@@ -53,13 +53,13 @@ export default function Purposes() {
             <div className="col-lg-6">
               <div className="gt-purposes-content">
                 <div className="gt-section-title mb-0">
-                  <h6 className="text-white wow fadeInUp">WHATS REASONS</h6>
+      
                   <h2 className="text-white wow splt-txt" data-splitting>
                     WHY CHOOSE US
                   </h2>
                 </div>
                 <p className="text">
-                  At Bconta, we believe construction is more than just building it's about creating spaces that inspire and endure. With years of expertise, a skilled team, and a passion for precision
+                  At Zariah Construction, we believe construction is more than just building it's about creating spaces that inspire and endure. With years of expertise, a skilled team, and a passion for precision
                 </p>
                 <ul className="gt-icon-items">
                   {purposes.map((purpose, index) => (
@@ -76,9 +76,9 @@ export default function Purposes() {
                 </ul>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Link to="/about" className="gt-theme-btn wow fadeInUp" data-wow-delay=".5s">
-                    <span className="gt-text-btn">
+                    {/* <span className="gt-text-btn">
                       <span className="gt-text-2">LEARN MORE <i className="fa-solid fa-arrow-right"></i></span>
-                    </span>
+                    </span> */}
                   </Link>
                 </motion.div>
               </div>

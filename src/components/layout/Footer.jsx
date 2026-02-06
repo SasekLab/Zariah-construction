@@ -26,14 +26,14 @@ export default function Footer() {
                         <img src={callIcon} alt="call" />
                         <span>Phone</span>
                       </div>
-                      <a href="tel:0945424780">(094) 542 - 4780</a>
+                      <a href="tel:0246682191">0246682191</a> / <a href="tel:0501720506">0501720506</a>
                     </li>
                     <li>
                       <div className="icon">
                         <img src={locationIcon} alt="location" />
                         <span>Location</span>
                       </div>
-                      Toronto, Montreal, City
+                      Kokofu Mensase
                     </li>
                   </ul>
                 </div>
@@ -64,6 +64,8 @@ export default function Footer() {
                   <li><NavLink to="/service">Burglar-Proof Windows/Gates</NavLink></li>
                   <li><NavLink to="/service">Roofing & Glass Works</NavLink></li>
                   <li><NavLink to="/service">Gas Stove Production</NavLink></li>
+                  <li><NavLink to="/service">Aluminum Welding</NavLink></li>
+                  <li><NavLink to="/service">Land Purchase</NavLink></li>
                 </ul>
               </div>
             </div>
@@ -75,11 +77,11 @@ export default function Footer() {
                 <ul className="gt-contact-content">
                   <li>
                     <span><i className="fa-solid fa-location-dot"></i></span>
-                    3770 Hidden Meadow Drive Venturia, ND 58489
+                    Kokofu Mensase
                   </li>
                   <li>
                     <span><i className="fa-solid fa-phone"></i></span>
-                    <a href="tel:+001652069800">+001 6520 698 00</a>
+                    <a href="tel:0246682191">0246682191</a> / <a href="tel:0501720506">0501720506</a>
                   </li>
                   <li>
                     <span><i className="fa-solid fa-envelope"></i></span>
@@ -97,7 +99,7 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <div className="footer-wrapper">
-            <p>© 2025 <b>Conztra</b>. All Rights Reserved.</p>
+            <p>@ 2026 <b>Zariah Construction</b>. All Right Reserved. Built by Sasek Labs</p>
             <div className="gt-social-icon d-flex align-items-center">
               <a href="#"><i className="fa-brands fa-instagram"></i></a>
               <a href="#"><i className="fa-brands fa-tiktok"></i></a>

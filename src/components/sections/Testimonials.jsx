@@ -10,51 +10,23 @@ const testimonials = [
   {
     id: 1,
     image: client01,
-    text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
-    author: 'Marvin McKinney',
-    role: 'Construction Engineer'
+    text: "Zariah Construction transformed our vision into reality with outstanding craftsmanship. Their attention to detail and professional approach throughout the entire project exceeded our expectations. Highly recommend their services!",
+    author: 'Ethan Mensah',
+    role: 'Business Owner'
   },
   {
     id: 2,
     image: client02,
-    text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
-    author: 'Marvin McKinney',
-    role: 'Construction Engineer'
+    text: "Working with Zariah Construction was a seamless experience. They completed our warehouse steel truss installation on time and within budget. The team's expertise and reliability are truly commendable.",
+    author: 'Kekeli Yaw',
+    role: 'Project Manager'
   },
   {
     id: 3,
     image: client03,
-    text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
-    author: 'Marvin McKinney',
-    role: 'Construction Engineer'
-  },
-  {
-    id: 4,
-    image: client01,
-    text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
-    author: 'Marvin McKinney',
-    role: 'Construction Engineerr'
-  },
-  {
-    id: 5,
-    image: client02,
-    text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
-    author: 'Marvin McKinney',
-    role: 'Construction Engineer'
-  },
-  {
-    id: 6,
-    image: client03,
-    text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
-    author: 'Marvin McKinney',
-    role: 'Construction Engineer'
-  },
-  {
-    id: 7,
-    image: client02,
-    text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
-    author: 'Marvin McKinney',
-    role: 'Construction Engineer'
+    text: "I'm thoroughly impressed with the quality of work delivered by Zariah Construction. From the initial consultation to the final installation, their professionalism and dedication to excellence were evident at every stage.",
+    author: 'Sophia Johnson',
+    role: 'Property Developer'
   },
 ]
 
@@ -102,15 +74,9 @@ export default function Testimonials() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -30 }}
                 transition={{ duration: 0.5 }}
+                style={{ paddingTop: '0' }}
               >
-                <motion.div
-                  className="gt-testi-thumb"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <img src={testimonial.image} alt={testimonial.author} />
-                </motion.div>
-                <div className="gt-testi-content">
+                <div className="gt-testi-content" style={{ marginTop: '0', paddingTop: '60px' }}>
                   <h5>{testimonial.text}</h5>
                   <div className="client-info">
                     <h4>{testimonial.author}</h4>
