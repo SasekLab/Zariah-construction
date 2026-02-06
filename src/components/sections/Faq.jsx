@@ -29,29 +29,39 @@ export default function Faq() {
   const isInView = useInView(ref, { once: true, amount: 0.3 })
 
   return (
-    <section className="faq-section-new fix section-padding">
-      <div className="container">
+    <section className="faq-section-new fix section-padding" style={{ paddingTop: '60px', paddingBottom: '60px' }}>
+      <div className="container" style={{ position: 'relative', zIndex: 10 }}>
         <div className="faq-wrapper-new">
           <div className="row justify-content-center">
-            <div className="col-lg-10">
-              <div
+            <div className="col-lg-10" style={{ position: 'relative' }}>
+              {/* Black background behind */}
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '600px',
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                backdropFilter: 'blur(15px)',
+                borderRadius: '12px',
+                zIndex: 1
+              }} />
+              {/* Video on top */}
+              <iframe 
                 ref={ref}
-                className="video-placeholder"
-                style={{
+                src="https://player.vimeo.com/video/1161589477?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                frameBorder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                style={{ 
+                  position: 'relative',
                   width: '100%',
-                  height: '500px',
-                  backgroundColor: '#e5e7eb',
+                  height: '600px',
                   borderRadius: '12px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '24px',
-                  color: '#6b7280',
-                  fontWeight: '600'
-                }}
-              >
-                Video Placeholder
-              </div>
+                  zIndex: 2
+                }} 
+                title="WhatsApp Video 2026-01-27 at 19.21.57"
+              />
             </div>
           </div>
         </div>
