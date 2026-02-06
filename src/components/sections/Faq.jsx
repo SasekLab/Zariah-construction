@@ -1,5 +1,5 @@
 import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 
 const faqs = [
   {
@@ -27,6 +27,15 @@ const faqs = [
 export default function Faq() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.3 })
+  const [loadVideo, setLoadVideo] = useState(false)
+
+  useEffect(() => {
+    // Delay video loading to improve initial page load
+    const timer = setTimeout(() => {
+      setLoadVideo(true)
+    }, 1000)
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <section className="faq-section-new fix section-padding" style={{ paddingTop: '60px', paddingBottom: '60px' }}>
@@ -47,21 +56,43 @@ export default function Faq() {
                 zIndex: 1
               }} />
               {/* Video on top */}
-              <iframe 
-                ref={ref}
-                src="https://player.vimeo.com/video/1161589477?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-                frameBorder="0" 
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                referrerPolicy="strict-origin-when-cross-origin" 
-                style={{ 
-                  position: 'relative',
-                  width: '100%',
-                  height: '600px',
-                  borderRadius: '12px',
-                  zIndex: 2
-                }} 
-                title="WhatsApp Video 2026-01-27 at 19.21.57"
-              />
+              {loadVideo ? (
+                <iframe 
+                  ref={ref}
+                  src="https://player.vimeo.com/video/1161589477?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                  frameBorder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  style={{ 
+                    position: 'relative',
+                    width: '100%',
+                    height: '600px',
+                    borderRadius: '12px',
+                    zIndex: 2
+                  }} 
+                  title="WhatsApp Video 2026-01-27 at 19.21.57"
+                  loading="lazy"
+                />
+              ) : (
+                <div 
+                  ref={ref}
+                  style={{ 
+                    position: 'relative',
+                    width: '100%',
+                    height: '600px',
+                    borderRadius: '12px',
+                    zIndex: 2,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: '#fff'
+                  }}
+                >
+                  <div className="spinner-border text-light" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
