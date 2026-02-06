@@ -11,15 +11,24 @@ export default function Preloader() {
         preloader.classList.add('loaded')
         setTimeout(() => {
           preloader.style.display = 'none'
-        }, 600)
+        }, 300)
       }
     }
+
+    // Faster initial load - don't wait for everything
+    const fastLoad = setTimeout(() => {
+      handleLoad()
+    }, 500)
 
     if (document.readyState === 'complete') {
       handleLoad()
     } else {
       window.addEventListener('load', handleLoad)
-      return () => window.removeEventListener('load', handleLoad)
+    }
+
+    return () => {
+      clearTimeout(fastLoad)
+      window.removeEventListener('load', handleLoad)
     }
   }, [location])
 

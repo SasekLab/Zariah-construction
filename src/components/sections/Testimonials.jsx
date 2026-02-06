@@ -46,11 +46,11 @@ export default function Testimonials() {
           className="gt-testimonial-content-slider"
           modules={[Navigation, Autoplay, Thumbs]}
           spaceBetween={30}
-          speed={1300}
+          speed={3000}
           loop={true}
           centeredSlides={true}
           autoplay={{
-            delay: 2000,
+            delay: 0,
             disableOnInteraction: false,
           }}
           slidesPerView={1}
