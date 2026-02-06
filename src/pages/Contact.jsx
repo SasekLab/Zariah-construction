@@ -55,7 +55,7 @@ export default function Contact() {
               <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                 <div className="contact-info-items">
                   <div className="icon">
-                    <i className="fa-solid fa-square-chevron-down"></i>
+                    <i className="fa-solid fa-envelope"></i>
                   </div>
                   <div className="content">
                     <h4>Email Address</h4>
