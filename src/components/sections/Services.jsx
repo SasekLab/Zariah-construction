@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 import service1 from '../../assets/img/home-1/service/service-01.jpg'
 import service2 from '../../assets/img/home-1/service/service-02.jpg'
 import service3 from '../../assets/img/home-1/service/service-03.jpg'
+import weldingImg from '../../assets/img/main_asset/services/welding.jpg'
+import landPurchaseImg from '../../assets/img/main_asset/services/land-purchase.jpg'
 
 const services = [
   {
@@ -63,13 +65,13 @@ const services = [
     icon: 'fa-regular fa-wand-sparkles',
     title: 'Aluminum Welding',
     description: 'Professional aluminum welding services for all your residential and commercial needs, delivering precision, durability, and high-quality finishes.',
-    image: "https://via.placeholder.com/400x300?text=Aluminum+Welding"
+    image: weldingImg
   },
   {
     icon: 'fa-regular fa-map-location-dot',
     title: 'Land Purchase',
     description: 'We assist clients in identifying and purchasing suitable land for construction projects, providing expert guidance throughout the acquisition process.',
-    image: "https://via.placeholder.com/400x300?text=Land+Purchase"
+    image: landPurchaseImg
   }
 ]
 
