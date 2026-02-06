@@ -8,9 +8,10 @@ import heroShape from '../../assets/img/home-1/hero/hero-2.png'
 import groupShape from '../../assets/img/home-1/hero/group-shape.png'
 import heroLine from '../../assets/img/home-1/hero/hero-line.png'
 import topShape from '../../assets/img/home-1/hero/top.png'
-import hero1 from '../../assets/img/home-1/hero/hero-1.png'
-import hero3 from '../../assets/img/home-1/hero/hero-3.png'
-import hero4 from '../../assets/img/home-1/hero/hero-4.png'
+import hero1 from '../../assets/img/main_asset/zar/zar1.jpg'
+import hero2 from '../../assets/img/main_asset/zar/zar2.jpg'
+import hero3 from '../../assets/img/main_asset/zar/zar3.jpg'
+import hero4 from '../../assets/img/main_asset/zar/zar4.jpg'
 
 export default function Hero() {
   const heroSliderRef = useRef(null)
@@ -57,6 +58,8 @@ export default function Hero() {
         <div className="dot-number">
           <span className="dot-num"><span>02</span></span>
           <span className="dot-num"><span className="style-2">03</span></span>
+          <span className="dot-num"><span>04</span></span>
+          <span className="dot-num"><span className="style-2">05</span></span>
         </div>
       </div>
       <div className="container-fluid">
@@ -78,12 +81,12 @@ export default function Hero() {
                 el: ".dot-number",
                 clickable: true,
                 renderBullet: (index, className) => {
-                  const dots = ['02', '03']
-                  return `<span class="${className}"><span class="${index === 0 ? '' : 'style-2'}">${dots[index] || ''}</span></span>`
+                  const dots = ['02', '03', '04', '05']
+                  return `<span class="${className}"><span class="${index % 2 === 0 ? '' : 'style-2'}">${dots[index] || ''}</span></span>`
                 },
               }}
             >
-              {[1, 2, 3].map((item) => (
+              {[1, 2, 3, 4].map((item) => (
                 <SwiperSlide key={item}>
                   <div className="hero-content">
                     <h1 className="wow fadeInUp" data-wow-delay=".3s">
@@ -137,7 +140,7 @@ export default function Hero() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 1, ease: "easeOut" }}
                 >
-                  <img src={hero1} alt="hero" />
+                  <img src={hero1} alt="hero" style={{ maxWidth: '480px', maxHeight: '821px', width: '100%', height: 'auto', objectFit: 'cover' }} />
                 </motion.div>
               </SwiperSlide>
               <SwiperSlide>
@@ -147,7 +150,7 @@ export default function Hero() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 1, ease: "easeOut" }}
                 >
-                  <img src={hero3} alt="hero" />
+                  <img src={hero2} alt="hero" style={{ maxWidth: '480px', maxHeight: '821px', width: '100%', height: 'auto', objectFit: 'cover' }} />
                 </motion.div>
               </SwiperSlide>
               <SwiperSlide>
@@ -157,7 +160,17 @@ export default function Hero() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 1, ease: "easeOut" }}
                 >
-                  <img src={hero4} alt="hero" />
+                  <img src={hero3} alt="hero" style={{ maxWidth: '480px', maxHeight: '821px', width: '100%', height: 'auto', objectFit: 'cover' }} />
+                </motion.div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <motion.div
+                  className="hero-image"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                >
+                  <img src={hero4} alt="hero" style={{ maxWidth: '480px', maxHeight: '821px', width: '100%', height: 'auto', objectFit: 'cover' }} />
                 </motion.div>
               </SwiperSlide>
             </Swiper>

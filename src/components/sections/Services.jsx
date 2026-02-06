@@ -58,6 +58,18 @@ const services = [
     title: 'Gas Stove Production',
     description: 'We are also involved in the production of high-quality gas stoves for a range of applications, including homes, restaurants, and hotels, focusing on efficiency and safety.',
     image: "https://fe5lpvispw.ufs.sh/f/DFYBeUqk6Uo0PWNhBJ6bDI8MaqW9BYGAUpw0yrouRi1OKQV4"
+  },
+  {
+    icon: 'fa-regular fa-wand-sparkles',
+    title: 'Aluminum Welding',
+    description: 'Professional aluminum welding services for all your residential and commercial needs, delivering precision, durability, and high-quality finishes.',
+    image: "https://via.placeholder.com/400x300?text=Aluminum+Welding"
+  },
+  {
+    icon: 'fa-regular fa-map-location-dot',
+    title: 'Land Purchase',
+    description: 'We assist clients in identifying and purchasing suitable land for construction projects, providing expert guidance throughout the acquisition process.',
+    image: "https://via.placeholder.com/400x300?text=Land+Purchase"
   }
 ]
 
