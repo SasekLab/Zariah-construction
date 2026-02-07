@@ -2,20 +2,22 @@ import { motion } from 'framer-motion'
 import brand1 from '../../assets/img/main_asset/clients/dl.png'
 import brand2 from '../../assets/img/main_asset/clients/presby.png'
 import brand3 from '../../assets/img/main_asset/clients/sda.png'
+import brand4 from '../../assets/img/main_asset/clients/cgc.jpeg'
+import brand5 from '../../assets/img/main_asset/clients/neoplan-vector-logo.png'
 
 const brands = [
   brand1,
   brand2,
   brand3,
+  brand4,
+  brand5,
 ]
 
-// Duplicate brands for seamless infinite scroll - need enough to fill screen + buffer
+
 const scrollBrands = [...brands, ...brands, ...brands, ...brands]
 
 export default function Brand() {
-  // Calculate the width of one set: 3 brands × (114px width + 100px gap) - 100px (last gap)
-  // = 3 × 214 - 100 = 542px
-  const oneSetWidth = 542
+  const oneSetWidth = 970
 
   return (
     <div className="gt-brand-section section-padding fix">
