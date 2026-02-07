@@ -2,9 +2,9 @@ import { useEffect, useRef } from 'react'
 import { motion, useInView, useMotionValue, useSpring, useTransform } from 'framer-motion'
 
 const counters = [
-  { number: 30, label: 'Completed', subLabel: 'Projects' },
-  { number: 50, label: 'Experienced', subLabel: 'Workers' },
-  { number: 100, label: 'Client', subLabel: 'Satisfaction' },
+  { number: 30, label: 'Completed', subLabel: 'Projects', suffix: '+' },
+  { number: 50, label: 'Experienced', subLabel: 'Workers', suffix: '+' },
+  { number: 100, label: 'Client', subLabel: 'Satisfaction', suffix: '%' },
 ]
 
 function CounterNumber({ value }) {
@@ -59,7 +59,7 @@ export default function Counter() {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="gt-content">
-                    <h2><CounterNumber value={counter.number} />+</h2>
+                    <h2><CounterNumber value={counter.number} />{counter.suffix}</h2>
                     <p>{counter.label} <br /> {counter.subLabel}</p>
                   </div>
                 </motion.div>
