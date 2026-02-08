@@ -2807,7 +2807,10 @@ span {
 }
 
 .gt-map-section {
-  margin-top: -130px;
+  margin-top: 0px;
+  height: 0px;
+  margin-bottom: 30px;
+  width: 0px;
 }
 
 @media (max-width: 1199px) {
@@ -7748,7 +7751,6 @@ span {
   width: 100%;
   height: 100%;
   content: "";
-  background: linear-gradient(91.45deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0) 100%);
   z-index: -1;
 }
 
@@ -7782,7 +7784,7 @@ span {
 }
 
 .gt-breadcrumb-wrapper .gt-page-heading h1 {
-  color: var(--gt-white);
+  color: var(--gt-header);
   font-size: 72px;
   position: relative;
   text-transform: uppercase;
@@ -7829,14 +7831,14 @@ span {
 }
 
 .gt-breadcrumb-wrapper .gt-page-heading .gt-breadcrumb-items li {
-  color: var(--gt-white);
+  color: var(--gt-header);
   text-transform: capitalize;
   font-weight: 400;
   font-size: 16px;
 }
 
 .gt-breadcrumb-wrapper .gt-page-heading .gt-breadcrumb-items li a {
-  color: var(--gt-white);
+  color: var(--gt-header);
   transition: all 0.4s ease-in-out;
 }
 
@@ -7850,7 +7852,7 @@ span {
 }
 
 .gt-breadcrumb-wrapper .gt-page-heading .gt-breadcrumb-items li i {
-  color: var(--gt-white);
+  color: var(--gt-header);
 }
 
 /* Breadcrumb Sub Title (used in Contact page) */

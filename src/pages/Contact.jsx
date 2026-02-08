@@ -73,7 +73,7 @@ export default function Contact() {
                   <div className="content">
                     <h4>Our Address</h4>
                     <h6>
-                      2715 Ash Dr. San Jose, South <br /> Dakota 83475
+                      Kokofu Mensase <br /> Ashanti Region
                     </h6>
                   </div>
                 </div>
@@ -86,8 +86,8 @@ export default function Contact() {
                   <div className="content">
                     <h4>Phone Number</h4>
                     <h6>
-                      <a href="tel:4805550103505">480 555 0103 505</a> <br />
-                      <a href="tel:5550125">555 0125</a>
+                      <a href="tel:0246682191">0246682191</a> <br />
+                      <a href="tel:0501720506">0501720506</a>
                     </h6>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export default function Contact() {
         </section>
 
         {/* Contact Form Section */}
-        <section className="gt-contact-us-section section-padding pb-0 fix">
+        <section className="mb-0 gt-contact-us-section section-padding pb-0 fix">
           <div className="container">
             <div className="gt-contact-us-wrapper">
               <h2 className="wow fadeInUp" data-wow-delay=".2s">Get In Touch</h2>
@@ -137,7 +137,7 @@ export default function Contact() {
         </section>
 
         {/* Map Section */}
-        <div className="gt-map-section wow fadeInUp" data-wow-delay=".3s">
+        <div className="invisible h-0 gt-map-section wow fadeInUp" data-wow-delay=".3s">
           <div className="gt-map-items">
             <div className="googpemap">
               <iframe

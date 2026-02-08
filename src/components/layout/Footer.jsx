@@ -18,7 +18,7 @@ export default function Footer() {
                 </div>
                 <div className="gt-footer-content">
                   <p>
-                    It is a long established fact that a reader will be distracted the road readable content of a page when looking at layout. of a page when looking at layout.
+                    Zariah Construction is a leading construction company based in Kokofu Mensase, Ashanti Region. We specialize in building construction, steel and wooden trusses, burglar-proof windows and gates, roofing and glass works, and gas stove production.
                   </p>
                   <ul className="gt-contact-list">
                     <li>
@@ -26,14 +26,14 @@ export default function Footer() {
                         <img src={callIcon} alt="call" />
                         <span>Phone</span>
                       </div>
-                      <a href="tel:0945424780">(094) 542 - 4780</a>
+                      <a href="tel:0246682191">0246682191</a>
                     </li>
                     <li>
                       <div className="icon">
                         <img src={locationIcon} alt="location" />
                         <span>Location</span>
                       </div>
-                      Toronto, Montreal, City
+                      Kokofu Mensase, Ashanti Region
                     </li>
                   </ul>
                 </div>
@@ -75,15 +75,15 @@ export default function Footer() {
                 <ul className="gt-contact-content">
                   <li>
                     <span><i className="fa-solid fa-location-dot"></i></span>
-                    3770 Hidden Meadow Drive Venturia, ND 58489
+                    Kokofu Mensase, Ashanti Region
                   </li>
                   <li>
                     <span><i className="fa-solid fa-phone"></i></span>
-                    <a href="tel:+001652069800">+001 6520 698 00</a>
+                    <a href="tel:0246682191">0246682191</a>
                   </li>
                   <li>
                     <span><i className="fa-solid fa-envelope"></i></span>
-                    <a href="mailto:info@example.com">info@example.com</a>
+                    <a href="mailto:contact@zariahconstruction.com">contact@zariahconstruction.com</a>
                   </li>
                 </ul>
                 <div className="footer-socials">
@@ -97,7 +97,7 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <div className="footer-wrapper">
-            <p>© 2025 <b>Conztra</b>. All Rights Reserved.</p>
+            <p>© 2026 <b>Zariah Construction</b>. All Rights Reserved.</p>
             <div className="gt-social-icon d-flex align-items-center">
               <a href="#"><i className="fa-brands fa-instagram"></i></a>
               <a href="#"><i className="fa-brands fa-tiktok"></i></a>
