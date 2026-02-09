@@ -33,7 +33,7 @@ export default function Footer() {
                         <img src={locationIcon} alt="location" />
                         <span>Location</span>
                       </div>
-                      Kokofu Mensase, Kumasi, Ghana
+                      Kokofu Mensase, Bekwai, Ghana
                     </li>
                   </ul>
                 </div>
@@ -77,7 +77,7 @@ export default function Footer() {
                 <ul className="gt-contact-content">
                   <li>
                     <span><i className="fa-solid fa-location-dot"></i></span>
-                    Kokofu Mensase, Kumasi, Ghana
+                    Kokofu Mensase, Bekwai, Ghana
                   </li>
                   <li>
                     <span><i className="fa-solid fa-phone"></i></span>
