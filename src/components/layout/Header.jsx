@@ -153,8 +153,8 @@ export default function Header() {
                 </div>
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
-                {/* Search Popup Toggle */}
-                <div className="header-right-icon d-none d-lg-flex">
+                {/* Search Popup Toggle - Hidden */}
+                <div className="header-right-icon d-none d-lg-flex" style={{ display: 'none' }}>
                   <button
                     className="search-toggle-btn"
                     onClick={toggleSearch}
@@ -186,8 +186,8 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Search Popup */}
-      <div className={`search-popup ${isSearchOpen ? 'active' : ''}`}>
+      {/* Search Popup - Hidden */}
+      <div className={`search-popup ${isSearchOpen ? 'active' : ''}`} style={{ display: 'none' }}>
         <div className="search-popup__overlay search-toggler" onClick={toggleSearch}></div>
         <div className="search-popup__content">
           <form role="search" method="get" className="search-popup__form" action="#">
