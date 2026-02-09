@@ -26,14 +26,14 @@ export default function Footer() {
                         <img src={callIcon} alt="call" />
                         <span>Phone</span>
                       </div>
-                      <a href="tel:0246682191">0246682191</a> / <a href="tel:0501720506">0501720506</a>
+                      <a href="tel:+233246682191">+233246682191</a> / <a href="tel:+233501720506">+233501720506</a>
                     </li>
                     <li>
                       <div className="icon">
                         <img src={locationIcon} alt="location" />
                         <span>Location</span>
                       </div>
-                      Kokofu Mensase
+                      Kokofu Mensase, Kumasi, Ghana
                     </li>
                   </ul>
                 </div>
@@ -77,11 +77,11 @@ export default function Footer() {
                 <ul className="gt-contact-content">
                   <li>
                     <span><i className="fa-solid fa-location-dot"></i></span>
-                    Kokofu Mensase
+                    Kokofu Mensase, Kumasi, Ghana
                   </li>
                   <li>
                     <span><i className="fa-solid fa-phone"></i></span>
-                    <a href="tel:0246682191">0246682191</a> / <a href="tel:0501720506">0501720506</a>
+                    <a href="tel:+233246682191">+233246682191</a> / <a href="tel:+233501720506">+233501720506</a>
                   </li>
                   <li>
                     <span><i className="fa-solid fa-envelope"></i></span>
@@ -91,7 +91,7 @@ export default function Footer() {
                 <div className="footer-socials">
                   <a href="#"><i className="fa-brands fa-instagram"></i></a>
                   <a href="#"><i className="fa-brands fa-tiktok"></i></a>
-                  <a href="#"><i className="fa-brands fa-whatsapp"></i></a>
+                  <a href="https://wa.me/233246682191"><i className="fa-brands fa-whatsapp"></i></a>
                 </div>
               </div>
             </div>
@@ -103,7 +103,7 @@ export default function Footer() {
             <div className="gt-social-icon d-flex align-items-center">
               <a href="#"><i className="fa-brands fa-instagram"></i></a>
               <a href="#"><i className="fa-brands fa-tiktok"></i></a>
-              <a href="#"><i className="fa-brands fa-whatsapp"></i></a>
+              <a href="https://wa.me/233246682191"><i className="fa-brands fa-whatsapp"></i></a>
             </div>
           </div>
         </div>

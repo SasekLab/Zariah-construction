@@ -72,7 +72,7 @@ export default function Header() {
                       <i className="fas fa-location-dot"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                      <a target="_blank" href="#">Kokofu Mensase, Kumasi, Ghana</a>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
@@ -80,7 +80,7 @@ export default function Header() {
                       <i className="fas fa-envelope"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="mailto:info@example.com"><span className="mailto:info@example.com">info@example.com</span></a>
+                      <a href="mailto:contact@zariahconstruction.com"><span className="mailto:contact@zariahconstruction.com">contact@zariahconstruction.com</span></a>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
@@ -96,7 +96,7 @@ export default function Header() {
                       <i className="far fa-phone"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="tel:+11002345909">+11002345909</a>
+                      <a href="tel:+233246682191">+233246682191</a> / <a href="tel:+233501720506">+233501720506</a>
                     </div>
                   </li>
                 </ul>

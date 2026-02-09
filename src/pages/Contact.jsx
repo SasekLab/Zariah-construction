@@ -73,7 +73,7 @@ export default function Contact() {
                   <div className="content">
                     <h4>Our Address</h4>
                     <h6>
-                      Kokofu Mensase
+                      Kokofu Mensase, Kumasi, Ghana
                     </h6>
                   </div>
                 </div>
@@ -86,8 +86,8 @@ export default function Contact() {
                   <div className="content">
                     <h4>Phone Number</h4>
                     <h6>
-                      <a href="tel:0246682191">0246682191</a> <br />
-                      <a href="tel:0501720506">0501720506</a>
+                      <a href="tel:+233246682191">+233246682191</a> <br />
+                      <a href="tel:+233501720506">+233501720506</a>
                     </h6>
                   </div>
                 </div>
