@@ -136,7 +136,7 @@ export default function Cta() {
                   transition={{ duration: 0.6, delay: 0.6 }}
                 >
                   <i className="fa-solid fa-phone" style={{ marginRight: '8px', fontSize: '14px' }}></i>
-                  Or call us: <a href="tel:0246682191" style={{ color: 'white', textDecoration: 'none', fontWeight: '600' }}>0246682191</a> / <a href="tel:0501720506" style={{ color: 'white', textDecoration: 'none', fontWeight: '600' }}>0501720506</a>
+                  Or call us: <a href="tel:+233246682191" style={{ color: 'white', textDecoration: 'none', fontWeight: '600' }}>+233246682191</a> / <a href="tel:+233501720506" style={{ color: 'white', textDecoration: 'none', fontWeight: '600' }}>+233501720506</a>
                 </motion.div>
               </motion.div>
             </div>
