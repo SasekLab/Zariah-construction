@@ -83,7 +83,7 @@ export default function Services() {
           <h6 className="wow fadeInUp">OUR SERVICES</h6>
           <h2 className="wow fadeInUp" data-wow-delay=".3s">EXPLORE OUR SERVICES</h2>
           <p className="wow fadeInUp mt-3 w-75 mx-auto" data-wow-delay=".4s">
-            At Azaria Construction Company, we offer a comprehensive range of construction and fabrication services designed to meet diverse needs. Our expertise ensures high-quality results, durability, and client satisfaction.
+            At Zariah Construction Company, we offer a comprehensive range of construction and fabrication services designed to meet diverse needs. Our expertise ensures high-quality results, durability, and client satisfaction.
           </p>
         </div>
         <div className="row">

@@ -93,7 +93,7 @@ export default function Hero() {
                       BUILDING FOUNDATIONS, <span>CRAFTING FUTURES</span>
                     </h1>
                     <p className="wow fadeInUp" data-wow-delay=".5s">
-                      At Azaria Construction Company, we are dedicated to delivering exceptional construction solutions. We combine innovative design with advanced techniques to build structures that stand the test of time, ensuring quality and reliability in every project.
+                      At Zariah Construction Company, we are dedicated to delivering exceptional construction solutions. We combine innovative design with advanced techniques to build structures that stand the test of time, ensuring quality and reliability in every project.
                     </p>
                     <div className="hero-button wow fadeInUp" data-wow-delay=".7s">
                       <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
