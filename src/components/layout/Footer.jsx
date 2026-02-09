@@ -26,7 +26,7 @@ export default function Footer() {
                         <img src={callIcon} alt="call" />
                         <span>Phone</span>
                       </div>
-                      <a href="tel:0246682191">0246682191</a>
+                      <a href="tel:+233246682191">+233246682191</a>
                     </li>
                     <li>
                       <div className="icon">
