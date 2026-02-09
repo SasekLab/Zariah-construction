@@ -46,24 +46,25 @@ export default function Testimonials() {
           className="gt-testimonial-content-slider"
           modules={[Navigation, Autoplay, Thumbs]}
           spaceBetween={30}
-          speed={3000}
+          speed={600}
           loop={true}
-          centeredSlides={true}
+          centeredSlides={false}
+          slidesPerGroup={1}
           autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
+            delay: 3000,
+            disableOnInteraction: true,
           }}
           slidesPerView={1}
           breakpoints={{
-            1199: { slidesPerView: 3 },
-            991: { slidesPerView: 2 },
-            767: { slidesPerView: 2 },
-            575: { slidesPerView: 1 },
-            0: { slidesPerView: 1 },
+            1199: { slidesPerView: 3, slidesPerGroup: 1, centeredSlides: false },
+            991: { slidesPerView: 2, slidesPerGroup: 1 },
+            767: { slidesPerView: 2, slidesPerGroup: 1 },
+            575: { slidesPerView: 1, slidesPerGroup: 1 },
+            0: { slidesPerView: 1, slidesPerGroup: 1 },
           }}
           navigation={{
-            nextEl: '.array-prev',
-            prevEl: '.array-next',
+            nextEl: '.array-next',
+            prevEl: '.array-prev',
           }}
         >
           {testimonials.map((testimonial) => (
@@ -87,22 +88,14 @@ export default function Testimonials() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="gt-array-items">
-          {/*           <motion.button
-            className="array-prev"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
+        <div className="gt-array-items d-none d-xl-flex" style={{ justifyContent: 'center', gap: '20px' }}>
+          <button className="array-prev">
             <i className="fa-solid fa-arrow-left"></i>
-          </motion.button>
+          </button>
 
-          <motion.button
-            className="array-next"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
+          <button className="array-next">
             <i className="fa-solid fa-arrow-right"></i>
-          </motion.button> */}
+          </button>
         </div>
       </div>
     </section>
