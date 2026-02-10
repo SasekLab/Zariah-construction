@@ -16881,6 +16881,7 @@ span {
   font-weight: 600;
   line-height: 150%;
   color: #1D1D1D;
+  text-transform: none;
 }
 
 @media (max-width: 767px) {
