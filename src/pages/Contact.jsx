@@ -59,7 +59,7 @@ export default function Contact() {
                   </div>
                   <div className="content">
                     <h4>Email Address</h4>
-                    <h6>
+                    <h6 style={{ textTransform: 'none' }}>
                       <a href="mailto:contact@zariahconstruction.com">contact@zariahconstruction.com</a> <br />
                     </h6>
                   </div>
@@ -98,7 +98,7 @@ export default function Contact() {
         </section>
 
         {/* Contact Form Section */}
-        <section className="gt-contact-us-section section-padding pb-0 fix">
+        <section className="gt-contact-us-section section-padding fix" style={{ paddingBottom: '0px' }}>
           <div className="container">
             <div className="gt-contact-us-wrapper">
               <h2 className="wow fadeInUp" data-wow-delay=".2s">Get In Touch</h2>
@@ -138,7 +138,7 @@ export default function Contact() {
         </section>
 
         {/* Map Section */}
-        <div className="gt-map-section wow fadeInUp" data-wow-delay=".3s">
+        <div className="gt-map-section wow fadeInUp" data-wow-delay=".3s" style={{ marginTop: '60px' }}>
           <div className="gt-map-items">
             <div className="googpemap">
               <iframe
