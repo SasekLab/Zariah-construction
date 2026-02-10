@@ -23,6 +23,14 @@ export default function Contact() {
 
   return (
     <div className="page-wrapper">
+      <style>{`
+        .header-1 .main-menu nav ul li a {
+          color: white !important;
+        }
+        .header-1.sticky .main-menu nav ul li a {
+          color: var(--gt-header) !important;
+        }
+      `}</style>
       <Header />
       <main>
         {/* Breadcrumb Section */}
