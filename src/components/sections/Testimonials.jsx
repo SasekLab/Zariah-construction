@@ -32,7 +32,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="gt-testimonial-section fix section-padding pt-10">
+    <section className="gt-testimonial-section fix section-padding">
       <div className="container">
         <div className="gt-section-title text-center">
           <h6 className="wow fadeInUp">TESTIMONIAL</h6>

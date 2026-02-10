@@ -27,7 +27,7 @@ export default function Purposes() {
   const isInView = useInView(imageRef, { once: true, amount: 0.3 })
 
   return (
-    <section className="gt-purposes-section fix">
+    <section className="gt-purposes-section fix section-padding">
       <div className="container">
         <div className="gt-purposes-wrapper">
           <div className="row g-4 align-items-center">

@@ -9,7 +9,7 @@ import Counter from '../components/sections/Counter'
 import Purposes from '../components/sections/Purposes'
 import Brand from '../components/sections/Brand'
 import Testimonials from '../components/sections/Testimonials'
-import Faq from '../components/sections/Faq'
+import VideoShowcase from '../components/sections/VideoShowcase'
 import Cta from '../components/sections/Cta'
 import { useEffect } from 'react'
 import { useMainScripts } from '../hooks/useMainScripts'
@@ -58,12 +58,12 @@ export default function Home() {
         <Hero />
         <About />
         <Services />
+        <VideoShowcase />
         {/* <Projects /> */}
         <Counter />
         <Purposes />
         <Brand />
         <Testimonials />
-        <Faq />
         <Cta />
       </main>
       <Footer />
