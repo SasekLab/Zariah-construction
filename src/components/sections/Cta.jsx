@@ -6,13 +6,12 @@ export default function Cta() {
   return (
     <section className="cta-hero-section fix">
       <div 
-        className="cta-hero-background"
+        className="cta-hero-background section-padding"
         style={{
           backgroundImage: `url(${ctaBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           position: 'relative',
-          padding: '120px 0',
           minHeight: '500px'
         }}
       >

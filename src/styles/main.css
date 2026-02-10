@@ -3476,7 +3476,6 @@ span {
 /* Responsive Styles */
 @media (max-width: 991px) {
   .cta-hero-background {
-    padding: 80px 0 !important;
     min-height: 450px !important;
   }
   
@@ -3491,7 +3490,6 @@ span {
 
 @media (max-width: 767px) {
   .cta-hero-background {
-    padding: 60px 0 !important;
     min-height: 400px !important;
   }
   
@@ -3513,7 +3511,6 @@ span {
 
 @media (max-width: 575px) {
   .cta-hero-background {
-    padding: 50px 0 !important;
     min-height: 350px !important;
   }
   
@@ -16881,6 +16878,7 @@ span {
   font-weight: 600;
   line-height: 150%;
   color: #1D1D1D;
+  text-transform: none;
 }
 
 @media (max-width: 767px) {

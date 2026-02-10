@@ -11,7 +11,7 @@ export default function About() {
   const isInView2 = useInView(imageRef2, { once: true, amount: 0.3 })
 
   return (
-    <section id="about" className="gt-about-section fix section-padding">
+    <section id="about" className="gt-about-section fix section-padding" style={{ paddingBottom: '60px' }}>
       <div className="container">
         <div className="gt-about-wrapper">
           <div className="row g-4">
