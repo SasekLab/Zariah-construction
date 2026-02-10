@@ -2777,6 +2777,13 @@ span {
   text-align: center;
 }
 
+.gt-contact-us-wrapper .contact-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
 @media (max-width: 1199px) {
   .gt-contact-us-wrapper .contact-btn {
     text-align: left;
@@ -2793,6 +2800,20 @@ span {
 
 .gt-contact-us-wrapper .contact-btn button.gt-theme-btn .gt-icon-btn::after {
   background-color: var(--gt-theme);
+}
+
+.gt-contact-us-wrapper .contact-btns .whatsapp-btn .gt-text-btn {
+  background-color: #25D366;
+}
+
+.gt-contact-us-wrapper .contact-btns .whatsapp-btn .gt-text-btn::after {
+  background-color: #128C7E;
+}
+
+@media (max-width: 1199px) {
+  .gt-contact-us-wrapper .contact-btns {
+    justify-content: flex-start;
+  }
 }
 
 .gt-map-section {
@@ -4029,11 +4050,11 @@ span {
   }
 }
 
-.faq-section-new {
+.video-showcase-section {
   position: relative;
 }
 
-.faq-section-new::before {
+.video-showcase-section::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -4043,6 +4064,12 @@ span {
   height: 100%;
   content: "";
   background-color: rgba(252, 90, 17, 0.9);
+}
+
+.video-showcase-section .gt-section-title h6,
+.video-showcase-section .gt-section-title h2,
+.video-showcase-section .gt-section-title p {
+  color: var(--gt-white);
 }
 
 .gt-counter-wrapper .gt-counter-box {
@@ -13282,16 +13309,42 @@ span {
   box-shadow: 10px 16px 120px 1px rgba(4, 7, 56, 0.12);
   padding: 15px;
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-section-1 .row > [class*="col-"] {
+  display: flex;
+}
+
+.service-section-1 .row {
+  row-gap: 40px;
+}
+
+.service-section-1 .row > [class*="col-"] .service-card-items {
+  width: 100%;
+}
+
+.service-card-items .service-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
 }
 
 .service-card-items .service-image img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .service-card-items .service-content {
   text-align: center;
   padding: 0px 35px 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service-card-items .service-content .icon {

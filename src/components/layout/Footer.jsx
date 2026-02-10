@@ -84,11 +84,6 @@ export default function Footer() {
                     <a href="mailto:contact@zariahconstruction.com" style={{ textTransform: 'none' }}>contact@zariahconstruction.com</a>
                   </li>
                 </ul>
-                <div className="footer-socials">
-                  <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i className="fa-brands fa-tiktok"></i></a>
-                  <a href="https://wa.me/233246682191"><i className="fa-brands fa-whatsapp"></i></a>
-                </div>
               </div>
             </div>
           </div>
@@ -96,11 +91,6 @@ export default function Footer() {
         <div className="footer-bottom">
           <div className="footer-wrapper">
             <p>@ 2026 <b>Zariah Construction</b>. All Right Reserved. Built by <a href="https://saseklabs.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Sasek Labs</a></p>
-            <div className="gt-social-icon d-flex align-items-center">
-              <a href="#"><i className="fa-brands fa-instagram"></i></a>
-              <a href="#"><i className="fa-brands fa-tiktok"></i></a>
-              <a href="https://wa.me/233246682191"><i className="fa-brands fa-whatsapp"></i></a>
-            </div>
           </div>
         </div>
       </div>
