@@ -80,7 +80,7 @@ export default function Header() {
                       <i className="fas fa-envelope"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="mailto:contact@zariahconstruction.com"><span className="mailto:contact@zariahconstruction.com">contact@zariahconstruction.com</span></a>
+                      <a href="mailto:contact@zariahconstruction.com" style={{ textTransform: 'none' }}><span className="mailto:contact@zariahconstruction.com">contact@zariahconstruction.com</span></a>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
