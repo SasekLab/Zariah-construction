@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import blackLogo from '../../assets/img/logo/black-logo.svg'
+import zariahLogo from '../../assets/img/logo-zariah.png'
 import dotIcon from '../../assets/img/home-1/dot.svg'
 
 export default function Header() {
@@ -44,7 +44,7 @@ export default function Header() {
               <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                 <div className="offcanvas__logo">
                   <Link to="/">
-                    <img src={blackLogo} alt="logo" />
+                    <img src={zariahLogo} alt="logo" style={{ maxWidth: '150px' }} />
                   </Link>
                 </div>
                 <div className="offcanvas__close">
@@ -72,7 +72,7 @@ export default function Header() {
                       <i className="fas fa-location-dot"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                      <a target="_blank" href="#">Kokofu Mensase, Kumasi, Ghana</a>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
@@ -80,7 +80,7 @@ export default function Header() {
                       <i className="fas fa-envelope"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="mailto:info@example.com"><span className="mailto:info@example.com">info@example.com</span></a>
+                      <a href="mailto:contact@zariahconstruction.com" style={{ textTransform: 'none' }}><span className="mailto:contact@zariahconstruction.com">contact@zariahconstruction.com</span></a>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
@@ -96,7 +96,7 @@ export default function Header() {
                       <i className="far fa-phone"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="tel:+11002345909">+11002345909</a>
+                      <a href="tel:+233246682191">+233246682191</a> / <a href="tel:+233501720506">+233501720506</a>
                     </div>
                   </li>
                 </ul>
@@ -126,10 +126,10 @@ export default function Header() {
             <div className="header-main">
               <div className="logo">
                 <Link to="/" className="header-logo">
-                  <img src={blackLogo} alt="logo" />
+                  <img src={zariahLogo} alt="logo" style={{ maxWidth: '150px' }} />
                 </Link>
                 <Link to="/" className="header-logo-2">
-                  <img src={blackLogo} alt="logo" />
+                  <img src={zariahLogo} alt="logo" style={{ maxWidth: '150px' }} />
                 </Link>
               </div>
               <div className="mean__menu-wrapper d-none d-lg-block">
@@ -153,8 +153,8 @@ export default function Header() {
                 </div>
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
-                {/* Search Popup Toggle */}
-                <div className="header-right-icon d-none d-lg-flex">
+                {/* Search Popup Toggle - Hidden */}
+                <div className="header-right-icon d-none d-lg-flex" style={{ display: 'none' }}>
                   <button
                     className="search-toggle-btn"
                     onClick={toggleSearch}
@@ -186,8 +186,8 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Search Popup */}
-      <div className={`search-popup ${isSearchOpen ? 'active' : ''}`}>
+      {/* Search Popup - Hidden */}
+      <div className={`search-popup ${isSearchOpen ? 'active' : ''}`} style={{ display: 'none' }}>
         <div className="search-popup__overlay search-toggler" onClick={toggleSearch}></div>
         <div className="search-popup__content">
           <form role="search" method="get" className="search-popup__form" action="#">

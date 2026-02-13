@@ -9,7 +9,7 @@ import Counter from '../components/sections/Counter'
 import Purposes from '../components/sections/Purposes'
 import Brand from '../components/sections/Brand'
 import Testimonials from '../components/sections/Testimonials'
-import Faq from '../components/sections/Faq'
+import VideoShowcase from '../components/sections/VideoShowcase'
 import Cta from '../components/sections/Cta'
 import { useEffect } from 'react'
 import { useMainScripts } from '../hooks/useMainScripts'
@@ -21,7 +21,7 @@ export default function Home() {
 
   useEffect(() => {
     // Initialize WOW animations - must happen after DOM is rendered
-    if (window.WOW) {
+    if (window.WOW && typeof window.WOW === 'function') {
       window.wow = new window.WOW({
         boxClass: 'wow',
         animateClass: 'animated',
@@ -53,21 +53,20 @@ export default function Home() {
 
   return (
     <div className="page-wrapper">
-      <Preloader />
       <Header />
       <main>
         <Hero />
         <About />
         <Services />
-        <Projects />
+        <VideoShowcase />
+        {/* <Projects /> */}
         <Counter />
         <Purposes />
         <Brand />
         <Testimonials />
-        <Faq />
         <Cta />
       </main>
       <Footer />
-    </div>
+    </div >
   )
 }

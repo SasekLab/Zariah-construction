@@ -4,81 +4,40 @@ import { motion } from 'framer-motion'
 import client01 from '../../assets/img/home-1/testimonial/client-01.jpg'
 import client02 from '../../assets/img/home-1/testimonial/client-02.jpg'
 import client03 from '../../assets/img/home-1/testimonial/client-03.jpg'
-import sm01 from '../../assets/img/home-1/testimonial/sm-01.png'
-import sm02 from '../../assets/img/home-1/testimonial/sm-02.png'
-import sm03 from '../../assets/img/home-1/testimonial/sm-03.png'
-import sm04 from '../../assets/img/home-1/testimonial/sm-04.png'
-import sm05 from '../../assets/img/home-1/testimonial/sm-05.png'
-import sm06 from '../../assets/img/home-1/testimonial/sm-06.png'
-import sm07 from '../../assets/img/home-1/testimonial/sm-07.png'
+
 
 const testimonials = [
   {
     id: 1,
     image: client01,
-    text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
-    author: 'Marvin McKinney',
-    role: 'Construction Engineer',
-    thumb: sm01
+    text: "Zariah Construction transformed our vision into reality with outstanding craftsmanship. Their attention to detail and professional approach throughout the entire project exceeded our expectations. Highly recommend their services!",
+    author: 'Ethan Mensah',
+    role: 'Business Owner'
   },
   {
     id: 2,
     image: client02,
-    text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
-    author: 'Marvin McKinney',
-    role: 'Construction Engineer',
-    thumb: sm02
+    text: "Working with Zariah Construction was a seamless experience. They completed our warehouse steel truss installation on time and within budget. The team's expertise and reliability are truly commendable.",
+    author: 'Kekeli Yaw',
+    role: 'Project Manager'
   },
   {
     id: 3,
     image: client03,
-    text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
-    author: 'Marvin McKinney',
-    role: 'Construction Engineer',
-    thumb: sm03
-  },
-  {
-    id: 4,
-    image: client01,
-    text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
-    author: 'Marvin McKinney',
-    role: 'Construction Engineerr',
-    thumb: sm04
-  },
-  {
-    id: 5,
-    image: client02,
-    text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
-    author: 'Marvin McKinney',
-    role: 'Construction Engineer',
-    thumb: sm05
-  },
-  {
-    id: 6,
-    image: client03,
-    text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
-    author: 'Marvin McKinney',
-    role: 'Construction Engineer',
-    thumb: sm06
-  },
-  {
-    id: 7,
-    image: client02,
-    text: "Don't buy this theme, you won't be able to resist its charm. Right, like you're charmed. A theme that is truly multipurpose and flexible.",
-    author: 'Marvin McKinney',
-    role: 'Construction Engineer',
-    thumb: sm07
+    text: "I'm thoroughly impressed with the quality of work delivered by Zariah Construction. From the initial consultation to the final installation, their professionalism and dedication to excellence were evident at every stage.",
+    author: 'Sophia Johnson',
+    role: 'Property Developer'
   },
 ]
 
 export default function Testimonials() {
   return (
-    <section className="gt-testimonial-section fix section-padding pt-0">
+    <section className="gt-testimonial-section fix section-padding" style={{ paddingTop: 0 }}>
       <div className="container">
         <div className="gt-section-title text-center">
           <h6 className="wow fadeInUp">TESTIMONIAL</h6>
           <h2 className="wow splt-txt" data-splitting>
-            HAPPY CUSTOMERS SAID
+            OUR WORKS SPEAK FOR US
           </h2>
         </div>
       </div>
@@ -87,24 +46,25 @@ export default function Testimonials() {
           className="gt-testimonial-content-slider"
           modules={[Navigation, Autoplay, Thumbs]}
           spaceBetween={30}
-          speed={1300}
+          speed={600}
           loop={true}
-          centeredSlides={true}
+          centeredSlides={false}
+          slidesPerGroup={1}
           autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
+            delay: 3000,
+            disableOnInteraction: true,
           }}
           slidesPerView={1}
           breakpoints={{
-            1199: { slidesPerView: 3 },
-            991: { slidesPerView: 2 },
-            767: { slidesPerView: 2 },
-            575: { slidesPerView: 1 },
-            0: { slidesPerView: 1 },
+            1199: { slidesPerView: 3, slidesPerGroup: 1, centeredSlides: false },
+            991: { slidesPerView: 2, slidesPerGroup: 1 },
+            767: { slidesPerView: 2, slidesPerGroup: 1 },
+            575: { slidesPerView: 1, slidesPerGroup: 1 },
+            0: { slidesPerView: 1, slidesPerGroup: 1 },
           }}
           navigation={{
-            nextEl: '.array-prev',
-            prevEl: '.array-next',
+            nextEl: '.array-next',
+            prevEl: '.array-prev',
           }}
         >
           {testimonials.map((testimonial) => (
@@ -115,15 +75,9 @@ export default function Testimonials() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -30 }}
                 transition={{ duration: 0.5 }}
+                style={{ paddingTop: '0' }}
               >
-                <motion.div
-                  className="gt-testi-thumb"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <img src={testimonial.image} alt={testimonial.author} />
-                </motion.div>
-                <div className="gt-testi-content">
+                <div className="gt-testi-content" style={{ marginTop: '0', paddingTop: '60px' }}>
                   <h5>{testimonial.text}</h5>
                   <div className="client-info">
                     <h4>{testimonial.author}</h4>
@@ -134,49 +88,14 @@ export default function Testimonials() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="gt-array-items">
-          <motion.button
-            className="array-prev"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
+        <div className="gt-array-items d-none d-xl-flex" style={{ justifyContent: 'center', gap: '20px' }}>
+          <button className="array-prev">
             <i className="fa-solid fa-arrow-left"></i>
-          </motion.button>
-          <Swiper
-            className="gt-testimonial-slider-thumb"
-            modules={[Navigation, Autoplay]}
-            spaceBetween={30}
-            speed={1300}
-            loop={true}
-            centeredSlides={true}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-            }}
-            slidesPerView={7}
-            breakpoints={{
-              575: { slidesPerView: 7 },
-              0: { slidesPerView: 1 },
-            }}
-          >
-            {testimonials.map((testimonial) => (
-              <SwiperSlide key={testimonial.id}>
-                <motion.img
-                  src={testimonial.thumb}
-                  alt={testimonial.author}
-                  whileHover={{ scale: 1.3, rotate: 5 }}
-                  transition={{ duration: 0.3 }}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <motion.button
-            className="array-next"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
+          </button>
+
+          <button className="array-next">
             <i className="fa-solid fa-arrow-right"></i>
-          </motion.button>
+          </button>
         </div>
       </div>
     </section>

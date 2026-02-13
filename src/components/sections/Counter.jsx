@@ -2,10 +2,9 @@ import { useEffect, useRef } from 'react'
 import { motion, useInView, useMotionValue, useSpring, useTransform } from 'framer-motion'
 
 const counters = [
-  { number: 39, label: 'Completed', subLabel: 'Projects' },
-  { number: 49, label: 'Experienced', subLabel: 'Workers' },
-  { number: 99, label: 'Happy', subLabel: 'Customer' },
-  { number: 89, label: 'Construction', subLabel: 'Award' },
+  { number: 30, label: 'Completed', subLabel: 'Projects', suffix: '+' },
+  { number: 50, label: 'Experienced', subLabel: 'Workers', suffix: '+' },
+  { number: 100, label: 'Client', subLabel: 'Satisfaction', suffix: '%' },
 ]
 
 function CounterNumber({ value }) {
@@ -41,11 +40,11 @@ export default function Counter() {
     <section ref={ref} className="gt-counter-section section-padding section-bg">
       <div className="container">
         <div className="gt-counter-wrapper">
-          <div className="row g-4">
+          <div className="row g-4 justify-content-center">
             {counters.map((counter, index) => (
               <motion.div
                 key={index}
-                className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+                className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
                 data-wow-delay={`.${2 + index * 2}s`}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -60,7 +59,7 @@ export default function Counter() {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="gt-content">
-                    <h2><CounterNumber value={counter.number} />+</h2>
+                    <h2><CounterNumber value={counter.number} />{counter.suffix}</h2>
                     <p>{counter.label} <br /> {counter.subLabel}</p>
                   </div>
                 </motion.div>

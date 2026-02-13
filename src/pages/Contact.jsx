@@ -4,15 +4,18 @@ import Preloader from '../components/layout/Preloader'
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import { useMainScripts } from '../hooks/useMainScripts'
-import breadcrumbBg from '../assets/img/breadcrumb-bg.jpg'
+import breadcrumbBg from '../assets/img/breadcrumb-bg.png'
 import breadcrumbShape from '../assets/img/breadcrumb-shape.jpg'
 
 export default function Contact() {
   useMainScripts()
 
   useEffect(() => {
+    // Scroll to top when page loads
+    window.scrollTo(0, 0)
+
     // Re-initialize WOW.js when component mounts
-    if (window.WOW) {
+    if (window.WOW && typeof window.WOW === 'function') {
       const wow = new window.WOW()
       wow.init()
     }
@@ -20,11 +23,18 @@ export default function Contact() {
 
   return (
     <div className="page-wrapper">
-      <Preloader />
+      <style>{`
+        .header-1 .main-menu nav ul li a {
+          color: white !important;
+        }
+        .header-1.sticky .main-menu nav ul li a {
+          color: var(--gt-header) !important;
+        }
+      `}</style>
       <Header />
       <main>
         {/* Breadcrumb Section */}
-        <div className="gt-breadcrumb-wrapper bg-cover" style={{backgroundImage: `url('${breadcrumbBg}')`}}>
+        <div className="gt-breadcrumb-wrapper bg-cover" style={{ backgroundImage: `url('${breadcrumbBg}')` }}>
           <div className="gt-right-shape">
             <img src={breadcrumbShape} alt="img" />
           </div>
@@ -53,13 +63,12 @@ export default function Contact() {
               <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                 <div className="contact-info-items">
                   <div className="icon">
-                    <i className="fa-solid fa-square-chevron-down"></i>
+                    <i className="fa-solid fa-envelope"></i>
                   </div>
                   <div className="content">
                     <h4>Email Address</h4>
-                    <h6>
-                      <a href="mailto:contact@ticstube.com">contact@ticstube.com</a> <br />
-                      <a href="mailto:contact@ticstube.com">info@ticstube.com</a>
+                    <h6 style={{ textTransform: 'none' }}>
+                      <a href="mailto:contact@zariahconstruction.com">contact@zariahconstruction.com</a> <br />
                     </h6>
                   </div>
                 </div>
@@ -72,7 +81,8 @@ export default function Contact() {
                   <div className="content">
                     <h4>Our Address</h4>
                     <h6>
-                      2715 Ash Dr. San Jose, South <br /> Dakota 83475
+                      Kokofu Mensase, Bekwai, Ghana <br />
+                      GPS ADDRESS: AB-0802-3274
                     </h6>
                   </div>
                 </div>
@@ -85,8 +95,8 @@ export default function Contact() {
                   <div className="content">
                     <h4>Phone Number</h4>
                     <h6>
-                      <a href="tel:4805550103505">480 555 0103 505</a> <br />
-                      <a href="tel:5550125">555 0125</a>
+                      <a href="tel:+233246682191">+233246682191</a> <br />
+                      <a href="tel:+233501720506">+233501720506</a>
                     </h6>
                   </div>
                 </div>
@@ -96,11 +106,11 @@ export default function Contact() {
         </section>
 
         {/* Contact Form Section */}
-        <section className="gt-contact-us-section section-padding pb-0 fix">
+        <section className="gt-contact-us-section section-padding fix" style={{ paddingBottom: '0px' }}>
           <div className="container">
             <div className="gt-contact-us-wrapper">
               <h2 className="wow fadeInUp" data-wow-delay=".2s">Get In Touch</h2>
-              <form action="#" id="contact-form" method="POST">
+              <form action="https://formspree.io/f/mojnjakg" id="contact-form" method="POST">
                 <div className="row g-4">
                   <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                     <div className="form-clt">
@@ -121,12 +131,17 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="col-lg-12 wow fadeInUp" data-wow-delay=".6s">
-                    <div className="contact-btn">
+                    <div className="contact-btn contact-btns">
                       <button type="submit" className="gt-theme-btn">
                         <span className="gt-text-btn">
                           <span className="gt-text-2">SEND MESSAGE <i className="fa-solid fa-chevrons-right"></i></span>
                         </span>
                       </button>
+                      <a href="https://wa.me/233246682191" className="gt-theme-btn whatsapp-btn">
+                        <span className="gt-text-btn">
+                          <span className="gt-text-2">CHAT ON WHATSAPP <i className="fa-brands fa-whatsapp"></i></span>
+                        </span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -136,14 +151,17 @@ export default function Contact() {
         </section>
 
         {/* Map Section */}
-        <div className="gt-map-section wow fadeInUp" data-wow-delay=".3s">
+        <div className="gt-map-section wow fadeInUp" data-wow-delay=".3s" style={{ marginTop: '60px' }}>
           <div className="gt-map-items">
             <div className="googpemap">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd"
-                style={{border: 0}}
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2803.020667063463!2d-1.5449359340837965!3d6.512844134114323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzAnNDcuNSJOIDHCsDMyJzM3LjEiVw!5e0!3m2!1sen!2sgh!4v1770674470474!5m2!1sen!2sgh"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
                 title="Google Map"
               ></iframe>
             </div>
@@ -151,6 +169,6 @@ export default function Contact() {
         </div>
       </main>
       <Footer />
-    </div>
+    </div >
   )
 }
