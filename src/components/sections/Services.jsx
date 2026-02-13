@@ -26,7 +26,7 @@ const services = [
     icon: 'fa-regular fa-screwdriver-wrench',
     title: 'Truss Installation',
     description: 'Expert installation of steel and wooden trusses. Secure fitting with precision workmanship guaranteed.',
-    image: "https://fe5lpvispw.ufs.sh/f/DFYBeUqk6Uo0Rz7ss7d3lQiHnWjqarTV9PRSOGBv5ubphxKM"
+    image: '/install.png'
   },
   {
     id: 'burglar-proof',
