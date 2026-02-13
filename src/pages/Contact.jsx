@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
+import FormfacadeEmbed from "@formfacade/embed-react"
 import Preloader from '../components/layout/Preloader'
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
@@ -110,42 +111,22 @@ export default function Contact() {
           <div className="container">
             <div className="gt-contact-us-wrapper">
               <h2 className="wow fadeInUp" data-wow-delay=".2s">Get In Touch</h2>
-              <form action="https://formspree.io/f/mojnjakg" id="contact-form" method="POST">
-                <div className="row g-4">
-                  <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div className="form-clt">
-                      <span>Your Name</span>
-                      <input type="text" name="name" id="name" placeholder="Full Name*" />
-                    </div>
-                  </div>
-                  <div className="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
-                    <div className="form-clt">
-                      <span>Your Email</span>
-                      <input type="text" name="email" id="email2" placeholder="Your Email*" />
-                    </div>
-                  </div>
-                  <div className="col-lg-12 wow fadeInUp" data-wow-delay=".5s">
-                    <div className="form-clt">
-                      <span>Your Message</span>
-                      <textarea name="message" id="message" placeholder="Message Here*"></textarea>
-                    </div>
-                  </div>
-                  <div className="col-lg-12 wow fadeInUp" data-wow-delay=".6s">
-                    <div className="contact-btn contact-btns">
-                      <button type="submit" className="gt-theme-btn">
-                        <span className="gt-text-btn">
-                          <span className="gt-text-2">SEND MESSAGE <i className="fa-solid fa-chevrons-right"></i></span>
-                        </span>
-                      </button>
-                      <a href="https://wa.me/233246682191" className="gt-theme-btn whatsapp-btn">
-                        <span className="gt-text-btn">
-                          <span className="gt-text-2">CHAT ON WHATSAPP <i className="fa-brands fa-whatsapp"></i></span>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </form>
+
+              {/* FormFacade Google Form embed */}
+              <div className="ff-embed-wrapper wow fadeInUp" data-wow-delay=".3s">
+                <FormfacadeEmbed
+                  formFacadeURL="https://formfacade.com/include/101038690306578141659/form/1FAIpQLSc5ASyReQHRUP-McY5LGG_dZChSGZa9q2sp_trRQrSVTGIgIg/classic.js/?div=ff-compose"
+                  onSubmitForm={() => console.log('Form submitted')}
+                />
+              </div>
+
+              <div className="contact-btn contact-btns wow fadeInUp" data-wow-delay=".4s" style={{ marginTop: '24px' }}>
+                <a href="https://wa.me/233246682191" className="gt-theme-btn whatsapp-btn" id="whats">
+                  <span className="gt-text-btn">
+                    <span className="gt-text-2">CHAT ON WHATSAPP <i className="fa-brands fa-whatsapp"></i></span>
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </section>
