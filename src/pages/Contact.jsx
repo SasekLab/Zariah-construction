@@ -120,13 +120,14 @@ export default function Contact() {
                 />
               </div>
 
-              <div className="contact-btn contact-btns wow fadeInUp" data-wow-delay=".4s" style={{ marginTop: '24px' }}>
+              {/* WhatsApp chat button - Hidden */}
+              {/* <div className="contact-btn contact-btns wow fadeInUp" data-wow-delay=".4s" style={{ marginTop: '24px' }}>
                 <a href="https://wa.me/233246682191" className="gt-theme-btn whatsapp-btn" id="whats">
                   <span className="gt-text-btn">
                     <span className="gt-text-2">CHAT ON WHATSAPP <i className="fa-brands fa-whatsapp"></i></span>
                   </span>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
